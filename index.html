@@ -24,28 +24,29 @@
   #rpWrap{width:230px;height:8px;background:rgba(0,0,0,.55);border-radius:5px;margin-left:auto;overflow:hidden;border:1px solid rgba(255,255,255,.25)}
   #rpBar{height:100%;background:linear-gradient(90deg,#e84118,#fbc531);width:0%}
   /* ===== Misi kiri atas ===== */
-  #missionBox{top:14px;left:16px;max-width:340px;background:rgba(5,8,20,.62);border-left:4px solid #ff9f1a;border-radius:8px;padding:10px 12px}
+  #missionBox{top:14px;left:16px;max-width:350px;background:rgba(5,8,20,.62);border-left:4px solid #ff9f1a;border-radius:8px;padding:10px 12px}
   #missionTitle{font-size:17px;font-weight:800;color:#ffb84d}
   #missionText{font-size:13.5px;line-height:1.45;margin-top:3px}
   #missionDist{font-size:12.5px;color:#7ed6df;margin-top:4px;font-weight:700}
-  /* ===== Standing distrik + kru ===== */
-  #districtBox{top:190px;left:16px;background:rgba(5,8,20,.55);border-radius:8px;padding:8px 12px;font-size:12.5px;line-height:1.6}
+  /* ===== Standing distrik + kru + permata ===== */
+  #districtBox{top:196px;left:16px;background:rgba(5,8,20,.55);border-radius:8px;padding:8px 12px;font-size:12.5px;line-height:1.6}
   #districtBox b{color:#ff9f1a}
   .rep{color:#ffd83d;letter-spacing:1px}
-  /* ===== Minimap ===== */
-  #minimapWrap{left:16px;bottom:16px;width:188px;height:188px;border-radius:50%;border:3px solid rgba(255,255,255,.75);overflow:hidden;box-shadow:0 6px 24px rgba(0,0,0,.6);background:#1d4e3a}
+  #gemBox{color:#7ef9ff;font-weight:700}
+  /* ===== Minimap bundar ===== */
+  #minimapWrap{left:16px;bottom:16px;width:188px;height:188px;border-radius:50%;border:3px solid rgba(255,255,255,.75);overflow:hidden;box-shadow:0 6px 24px rgba(0,0,0,.6);background:#14532d}
   #minimap{width:188px;height:188px}
-  #compass{left:92px;bottom:208px;font-weight:800;font-size:14px;color:#ffd83d}
+  #compass{left:96px;bottom:208px;font-weight:800;font-size:14px;color:#ffd83d}
   /* ===== Speedometer ===== */
   #speedBox{right:20px;bottom:18px;text-align:right}
   #speed{font-size:44px;font-weight:900;font-style:italic}
   #speedBox small{font-size:13px;opacity:.85;letter-spacing:2px}
   #gear{font-size:14px;color:#ffb84d;font-weight:700}
-  /* ===== Banner tengah ===== */
+  /* ===== Banner & toast ===== */
   #banner{top:22%;left:50%;transform:translateX(-50%);text-align:center;opacity:0;transition:opacity .35s;width:90%}
   #bannerTitle{font-size:44px;font-weight:900;font-style:italic;color:#ffd83d;text-shadow:0 4px 0 #c23616,0 8px 28px rgba(0,0,0,.7)}
   #bannerSub{font-size:18px;margin-top:4px}
-  #toast{bottom:230px;left:50%;transform:translateX(-50%);font-size:16px;font-weight:700;color:#7dff8a;opacity:0;transition:opacity .3s;text-align:center;width:90%}
+  #toast{bottom:238px;left:50%;transform:translateX(-50%);font-size:16px;font-weight:700;color:#7dff8a;opacity:0;transition:opacity .3s;text-align:center;width:90%}
   #bustWrap{top:58%;left:50%;transform:translateX(-50%);width:280px;display:none}
   #bustLabel{text-align:center;font-weight:800;color:#ff6b81;letter-spacing:2px;font-size:14px}
   #bustOuter{height:12px;background:rgba(0,0,0,.6);border:1px solid #ff6b81;border-radius:7px;overflow:hidden;margin-top:4px}
@@ -54,7 +55,7 @@
   .screen{position:fixed;inset:0;z-index:50;display:flex;flex-direction:column;align-items:center;justify-content:center;background:radial-gradient(ellipse at 50% 35%,rgba(255,110,64,.28),rgba(4,6,18,.93) 65%);text-align:center;padding:20px}
   .screen h1{font-size:64px;font-weight:900;font-style:italic;line-height:.95;background:linear-gradient(180deg,#ffe259,#ff7518);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 4px 14px rgba(0,0,0,.6))}
   .screen h2{font-size:22px;letter-spacing:6px;color:#7ed6df;margin-top:6px;font-weight:700}
-  .screen p{max-width:620px;margin-top:16px;font-size:15.5px;line-height:1.6;opacity:.94}
+  .screen p{max-width:640px;margin-top:16px;font-size:15.5px;line-height:1.6;opacity:.94}
   .controls{margin-top:14px;font-size:13.5px;line-height:1.9;background:rgba(0,0,0,.45);padding:10px 22px;border-radius:10px;border:1px solid rgba(255,255,255,.18)}
   .controls b{color:#ffd83d}
   .btn{pointer-events:auto;margin-top:22px;background:linear-gradient(180deg,#ff9f1a,#e84118);border:none;color:#fff;font-size:20px;font-weight:900;letter-spacing:2px;padding:14px 52px;border-radius:10px;cursor:pointer;box-shadow:0 8px 24px rgba(232,65,24,.5)}
@@ -62,8 +63,8 @@
   #endScreen{display:none}
   #endTitle{font-size:58px}
   .hidden{display:none!important}
-  #hint{bottom:16px;left:50%;transform:translateX(-50%);font-size:13px;opacity:.85;background:rgba(0,0,0,.4);padding:5px 14px;border-radius:14px}
-  @media(max-width:700px){.screen h1{font-size:40px}#districtBox{display:none}#missionBox{max-width:250px}}
+  #hint{bottom:16px;left:50%;transform:translateX(-50%);font-size:13px;opacity:.85;background:rgba(0,0,0,.4);padding:5px 14px;border-radius:14px;white-space:nowrap}
+  @media(max-width:700px){.screen h1{font-size:40px}#districtBox{display:none}#missionBox{max-width:250px}#hint{display:none}}
 </style>
 </head>
 <body>
@@ -80,6 +81,7 @@
   <div>⚓ Pelabuhan Sagara <span class="rep" id="rep-port">☆☆☆☆☆</span></div>
   <div>🌴 Vice Strip <span class="rep" id="rep-vice">☆☆☆☆☆</span></div>
   <div>⛰️ Bukit Palma <span class="rep" id="rep-hill">☆☆☆☆☆</span></div>
+  <div id="gemBox">💎 Permata Sagara: <span id="gemCount">0/15</span></div>
   <div style="margin-top:4px"><b>KRU SAGARA</b> — <span id="crewText">Kamu masih orang luar.</span></div>
 </div>
 <div class="hud" id="topRight">
@@ -95,25 +97,26 @@
 </div>
 <div class="hud" id="minimapWrap"><canvas id="minimap" width="188" height="188"></canvas></div>
 <div class="hud" id="compass">U</div>
-<div class="hud" id="speedBox"><div id="speed">0</div><small>KM/JAM</small><div id="gear">JALAN KAKI</div></div>
+<div class="hud" id="speedBox"><div id="speed">0</div><small>KM/JAM</small><div id="gear">DI MOBIL</div></div>
 <div class="hud" id="banner"><div id="bannerTitle"></div><div id="bannerSub"></div></div>
 <div class="hud" id="toast"></div>
 <div class="hud" id="bustWrap"><div id="bustLabel">⚠ HAMPIR TERTANGKAP ⚠</div><div id="bustOuter"><div id="bustBar"></div></div></div>
-<div class="hud" id="hint">WASD — gerak &nbsp;•&nbsp; F — masuk/keluar mobil &nbsp;•&nbsp; SPACE — rem tangan &nbsp;•&nbsp; SHIFT — lari / boost &nbsp;•&nbsp; R — reset mobil</div>
+<div class="hud" id="hint">WASD — gerak &nbsp;•&nbsp; F — masuk/keluar mobil &nbsp;•&nbsp; SPACE — rem tangan &nbsp;•&nbsp; SHIFT — lari / nitro &nbsp;•&nbsp; R — reset mobil &nbsp;•&nbsp; M — suara</div>
 
 <!-- Layar awal -->
 <div class="screen" id="startScreen">
   <h1>SAGARA HEAT</h1>
   <h2>— ISLE OF VICE —</h2>
   <p>Pulau tropis Sagara dikuasai tiga distrik: <b>Pelabuhan Sagara</b>, <b>Vice Strip</b>, dan <b>Bukit Palma</b>.
-  Bangun namamu dari anak pantai jadi legenda jalanan: ambil paket haram, antar tepat waktu, menangkan balapan liar,
-  hajar kurir rival, dan kabur dari kejaran polisi. Kru Sagara memperhatikan setiap langkahmu.</p>
+  Bangun namamu dari anak pantai jadi legenda jalanan: ambil paket di pelabuhan, antar tepat waktu ke klub,
+  menangkan balapan pantai 9 checkpoint, hajar kurir rival, lalu kabur ke safehouse.
+  Kumpulkan juga <b>15 Permata Sagara</b> yang tersembunyi di seluruh pulau. Kru Sagara memperhatikan setiap langkahmu.</p>
   <div class="controls">
-    <b>W A S D</b> mengemudi / jalan &nbsp;•&nbsp; <b>F</b> masuk &amp; keluar mobil &nbsp;•&nbsp; <b>SPACE</b> rem tangan (drift)<br>
-    <b>SHIFT</b> lari / nitro ringan &nbsp;•&nbsp; <b>R</b> balikkan mobil &nbsp;•&nbsp; Ikuti <b>penanda kuning</b> di minimap untuk misi
+    <b>W A S D</b> mengemudi / jalan kaki &nbsp;•&nbsp; <b>F</b> masuk &amp; keluar mobil &nbsp;•&nbsp; <b>SPACE</b> rem tangan (drift)<br>
+    <b>SHIFT</b> lari / nitro ringan &nbsp;•&nbsp; <b>R</b> balikkan mobil &nbsp;•&nbsp; <b>M</b> nyala/matikan suara &nbsp;•&nbsp; Ikuti <b>penanda kuning</b> di minimap
   </div>
   <button class="btn" id="startBtn">▶ MULAI MESIN</button>
-  <p style="font-size:12.5px;opacity:.7;margin-top:12px">Tabrak mobil &amp; properti = bintang buronan naik. Hilangkan polisi lalu masuk penanda hijau Pay 'n Spray untuk bersih-bersih.</p>
+  <p style="font-size:12.5px;opacity:.7;margin-top:12px">Tabrak mobil &amp; properti = bintang buronan naik. Kehilangan jejak polisi menurunkan bintang. Penanda hijau = Pay 'n Spray ($150: perbaiki mobil + hapus bintang).</p>
 </div>
 
 <!-- Layar tertangkap / tewas -->
@@ -129,28 +132,71 @@
 <script type="module">
 import * as THREE from 'three';
 
-/* ============================================================
+/* ================================================================
    SAGARA HEAT — Isle of Vice
-   Open-world crime 3D low-poly: pulau, kota, polisi, misi,
-   balapan, kru & standing distrik. Satu file, three.js.
-   ============================================================ */
+   Open-world crime 3D low-poly dalam satu file (three.js):
+   pulau tropis, kota grid + lingkar pantai, mobil & jalan kaki,
+   polisi AI + bintang buronan 1–5, 5 misi bertahap, balapan
+   jalanan 9 checkpoint, kru, standing 3 distrik, Pay 'n Spray,
+   15 permata tersembunyi, lalu lintas AI, pejalan kaki, suara.
+   ================================================================ */
 
-// ---------- State pemain ----------
+// ---------------- State pemain ----------------
 const S = {
   money: 250, health: 100, armour: 50, rp: 0, rank: 1,
-  wanted: 0, wantedTimer: 0, bust: 0, dead: false,
-  inCar: true, speed: 0,
+  wanted: 0, bust: 0, heat: 0, loseTimer: 0,
   standing: { port: 0, vice: 0, hill: 0 },
-  missionIndex: 0, freeRoam: false,
+  missionIndex: 0, freeRoam: false, gems: 0,
+  inCar: true, started: false, over: false, muted: false,
 };
 const RANKS = [
-  { rp: 0,    name: 'ANAK PANTAI' }, { rp: 150,  name: 'KURIR JALANAN' },
-  { rp: 400,  name: 'PEMBALAP LIAR' }, { rp: 800,  name: 'ORANG KEPERCAYAAN' },
-  { rp: 1400, name: 'PENGUASA STRIP' }, { rp: 2200, name: 'LEGENDA SAGARA' },
+  { need: 0,    name: 'ANAK PANTAI' },
+  { need: 150,  name: 'KURIR JALANAN' },
+  { need: 400,  name: 'PEMBALAP LIAR' },
+  { need: 800,  name: 'TANGAN KANAN' },
+  { need: 1400, name: 'RAJA STRIP' },
+  { need: 2200, name: 'LEGENDA SAGARA' },
 ];
-const CREW = ['Kamu masih orang luar.', 'Dodo (mekanik) mulai melirikmu.', 'Sinta (pembalap Vice Strip) jadi rekanmu.', 'Bang Jaka (pelabuhan) percaya padamu.', 'Kru Bukit Palma tunduk padamu.', 'SELURUH KRU SAGARA DI BELAKANGMU. 👑'];
+const CREW = [
+  'Kamu masih orang luar.',
+  'Dodo (mekanik pelabuhan) mulai melirikmu.',
+  'Sinta (ratu balapan Vice Strip) jadi rekanmu.',
+  'Bang Jaka (penguasa pelabuhan) percaya padamu.',
+  'Kru Bukit Palma tunduk padamu.',
+  'SELURUH KRU SAGARA DI BELAKANGMU. 👑',
+];
 
-// ---------- Renderer / Scene ----------
+// ---------------- Audio sederhana (WebAudio) ----------------
+let AC = null, engineOsc = null, engineGain = null, sirenOsc = null, sirenGain = null;
+function initAudio() {
+  if (AC) return;
+  try {
+    AC = new (window.AudioContext || window.webkitAudioContext)();
+    engineOsc = AC.createOscillator(); engineOsc.type = 'sawtooth'; engineOsc.frequency.value = 55;
+    engineGain = AC.createGain(); engineGain.gain.value = 0.0;
+    engineOsc.connect(engineGain).connect(AC.destination); engineOsc.start();
+    sirenOsc = AC.createOscillator(); sirenOsc.type = 'triangle'; sirenOsc.frequency.value = 700;
+    sirenGain = AC.createGain(); sirenGain.gain.value = 0.0;
+    sirenOsc.connect(sirenGain).connect(AC.destination); sirenOsc.start();
+  } catch (e) { AC = null; }
+}
+function beep(freq, dur, type, vol, when) {
+  if (!AC || S.muted) return;
+  const o = AC.createOscillator(), g = AC.createGain(), t = AC.currentTime + (when || 0);
+  o.type = type || 'square'; o.frequency.value = freq;
+  g.gain.setValueAtTime(vol || 0.06, t); g.gain.exponentialRampToValueAtTime(0.001, t + dur);
+  o.connect(g).connect(AC.destination); o.start(t); o.stop(t + dur);
+}
+function jingle(ok) {
+  if (ok) { beep(523, .12, 'square', .07, 0); beep(659, .12, 'square', .07, .12); beep(784, .22, 'square', .07, .24); }
+  else { beep(220, .2, 'sawtooth', .07, 0); beep(160, .3, 'sawtooth', .07, .18); }
+}
+
+// ---------------- Scene dasar ----------------
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x2a1a3e);
+scene.fog = new THREE.Fog(0x40264f, 260, 720);
+const camera = new THREE.PerspectiveCamera(62, innerWidth / innerHeight, 0.1, 2000);
 const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setSize(innerWidth, innerHeight);
 renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
@@ -158,740 +204,917 @@ renderer.shadowMap.enabled = true;
 renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 document.getElementById('game').appendChild(renderer.domElement);
 
-const scene = new THREE.Scene();
-scene.background = new THREE.Color(0xff9a5c);
-scene.fog = new THREE.Fog(0xff8c5a, 120, 420);
-const camera = new THREE.PerspectiveCamera(62, innerWidth / innerHeight, 0.1, 1000);
-
-const sun = new THREE.DirectionalLight(0xffd9a0, 2.4);
-sun.position.set(-90, 110, -60);
+const sun = new THREE.DirectionalLight(0xffb37a, 2.4);
+sun.position.set(180, 220, -120);
 sun.castShadow = true;
 sun.shadow.mapSize.set(2048, 2048);
-sun.shadow.camera.left = -160; sun.shadow.camera.right = 160;
-sun.shadow.camera.top = 160; sun.shadow.camera.bottom = -160;
-scene.add(sun, new THREE.HemisphereLight(0xffc4a3, 0x2c4a3e, 0.95));
+sun.shadow.camera.left = -260; sun.shadow.camera.right = 260;
+sun.shadow.camera.top = 260; sun.shadow.camera.bottom = -260;
+scene.add(sun);
+scene.add(new THREE.HemisphereLight(0xffd9a0, 0x27355e, 0.95));
+const sunBall = new THREE.Mesh(new THREE.SphereGeometry(26, 16, 16), new THREE.MeshBasicMaterial({ color: 0xffdf8a }));
+sunBall.position.set(420, 150, -520); scene.add(sunBall);
 
-// Langit senja: bola gradasi sederhana + matahari sprite
-const skyGeo = new THREE.SphereGeometry(600, 24, 12);
-const skyMat = new THREE.MeshBasicMaterial({ color: 0xff7e47, side: THREE.BackSide, fog: false });
-scene.add(new THREE.Mesh(skyGeo, skyMat));
-
-// ---------- Material bantu ----------
-const M = (c, o = {}) => new THREE.MeshStandardMaterial({ color: c, roughness: 0.9, metalness: 0.05, ...o });
-const colliders = []; // {x,z,hw,hd}
+// ---------------- Konstanta pulau ----------------
+const WORLD = 460;              // ukuran total peta (untuk minimap)
+const ISLAND = 400;             // daratan persegi
+const ROAD_POS = [-128, -64, 0, 64, 128];
+const ROAD_W = 15;
+const RING = 176;               // jalan lingkar pantai (persegi di ±RING)
+const HILL = { x: -140, z: -140, r: 62, h: 5 };
+function groundHeight(x, z) {
+  const d = Math.hypot(x - HILL.x, z - HILL.z);
+  if (d >= HILL.r) return 0;
+  const t = 1 - d / HILL.r;
+  return HILL.h * t * t;
+}
+const colliders = []; // {x,z,hw,hd} rintangan AABB (gedung, kontainer, dll)
 function addCollider(x, z, hw, hd) { colliders.push({ x, z, hw, hd }); }
+function collide(px, pz, rad) {
+  // dorong keluar dari AABB terdekat; kembalikan true bila menabrak
+  let hit = false;
+  for (const c of colliders) {
+    const dx = px - c.x, dz = pz - c.z;
+    const ox = c.hw + rad - Math.abs(dx), oz = c.hd + rad - Math.abs(dz);
+    if (ox > 0 && oz > 0) {
+      hit = true;
+      if (ox < oz) px = c.x + (dx > 0 ? c.hw + rad : -c.hw - rad);
+      else pz = c.z + (dz > 0 ? c.hd + rad : -c.hd - rad);
+    }
+  }
+  const lim = ISLAND / 2 - 4;
+  px = Math.max(-lim, Math.min(lim, px));
+  pz = Math.max(-lim, Math.min(lim, pz));
+  return { x: px, z: pz, hit };
+}
 
-// ---------- Pulau ----------
-const WORLD = 170; // setengah ukuran pulau (meter)
-const sand = new THREE.Mesh(new THREE.CircleGeometry(WORLD + 26, 48), M(0xe8c98a));
-sand.rotation.x = -Math.PI / 2; sand.position.y = -0.05; sand.receiveShadow = true; scene.add(sand);
-const grass = new THREE.Mesh(new THREE.PlaneGeometry(WORLD * 2, WORLD * 2), M(0x3f9e57));
+// ---------------- Material bantu ----------------
+function mat(color, opts) { return new THREE.MeshLambertMaterial(Object.assign({ color }, opts || {})); }
+function box(w, h, d, color, x, y, z, opts) {
+  const m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), mat(color, opts));
+  m.position.set(x, y, z); m.castShadow = true; m.receiveShadow = true;
+  scene.add(m); return m;
+}
+
+// ---------------- Laut, pantai, daratan ----------------
+const sea = new THREE.Mesh(new THREE.PlaneGeometry(2400, 2400), mat(0x14607e));
+sea.rotation.x = -Math.PI / 2; sea.position.y = -0.55; scene.add(sea);
+const beach = new THREE.Mesh(new THREE.PlaneGeometry(ISLAND + 56, ISLAND + 56), mat(0xe8cf8f));
+beach.rotation.x = -Math.PI / 2; beach.position.y = -0.12; beach.receiveShadow = true; scene.add(beach);
+const grass = new THREE.Mesh(new THREE.PlaneGeometry(ISLAND, ISLAND), mat(0x3f9e4d));
 grass.rotation.x = -Math.PI / 2; grass.position.y = 0.0; grass.receiveShadow = true; scene.add(grass);
-const ocean = new THREE.Mesh(new THREE.PlaneGeometry(1600, 1600), new THREE.MeshStandardMaterial({ color: 0x1283a8, roughness: 0.35, metalness: 0.3, transparent: true, opacity: 0.94 }));
-ocean.rotation.x = -Math.PI / 2; ocean.position.y = -0.7; scene.add(ocean);
+// Bukit Palma (tanah naik halus di barat laut)
+const hillMesh = new THREE.Mesh(new THREE.CylinderGeometry(10, HILL.r, HILL.h, 28), mat(0x4cab58));
+hillMesh.position.set(HILL.x, HILL.h / 2 - 0.05, HILL.z); hillMesh.receiveShadow = true; scene.add(hillMesh);
 
-// ---------- Jalan: grid + lingkar pantai ----------
-const roadMat = M(0x2e3138, { roughness: 1 });
-const lineMat = new THREE.MeshBasicMaterial({ color: 0xf7e08a });
-const ROAD_POS = [-120, -60, 0, 60, 120];
-function roadStrip(w, l, x, z, rotY) {
-  const r = new THREE.Mesh(new THREE.PlaneGeometry(w, l), roadMat);
-  r.rotation.x = -Math.PI / 2; r.rotation.z = rotY; r.position.set(x, 0.03, z); r.receiveShadow = true; scene.add(r);
-  for (let d = -l / 2 + 8; d < l / 2 - 4; d += 14) {
-    const dash = new THREE.Mesh(new THREE.PlaneGeometry(0.45, 5), lineMat);
-    dash.rotation.x = -Math.PI / 2; dash.rotation.z = rotY;
-    dash.position.set(x + Math.sin(rotY) * d, 0.05, z + Math.cos(rotY) * d); scene.add(dash);
-  }
+// ---------------- Jalan: grid + lingkar pantai ----------------
+const roadMat = mat(0x2e2e38), lineMat = new THREE.MeshBasicMaterial({ color: 0xf7e08a });
+function roadStrip(w, d, x, z) {
+  const m = new THREE.Mesh(new THREE.PlaneGeometry(w, d), roadMat);
+  m.rotation.x = -Math.PI / 2; m.position.set(x, 0.03, z); m.receiveShadow = true; scene.add(m);
 }
-ROAD_POS.forEach(p => { roadStrip(13, WORLD * 2 - 6, p, 0, 0); roadStrip(13, WORLD * 2 - 6, 0, p, Math.PI / 2); });
-// Jalan lingkar pantai
-[[0, -152, Math.PI / 2], [0, 152, Math.PI / 2], [-152, 0, 0], [152, 0, 0]].forEach(([x, z, r]) => roadStrip(11, 316, x, z, r));
-function onRoad(x, z) {
-  if (Math.abs(Math.abs(x) - 152) < 8 || Math.abs(Math.abs(z) - 152) < 8) return true;
-  return ROAD_POS.some(p => Math.abs(x - p) < 8 || Math.abs(z - p) < 8);
+for (const p of ROAD_POS) {
+  roadStrip(ROAD_W, ISLAND, p, 0);           // vertikal
+  roadStrip(ISLAND, ROAD_W, 0, p);           // horizontal
+}
+// lingkar pantai persegi
+roadStrip(RING * 2 + ROAD_W, ROAD_W, 0, -RING); roadStrip(RING * 2 + ROAD_W, ROAD_W, 0, RING);
+roadStrip(ROAD_W, RING * 2 + ROAD_W, -RING, 0); roadStrip(ROAD_W, RING * 2 + ROAD_W, RING, 0);
+// garis tengah putus-putus
+for (const p of ROAD_POS) for (let t = -ISLAND / 2 + 12; t < ISLAND / 2 - 8; t += 16) {
+  const a = new THREE.Mesh(new THREE.PlaneGeometry(0.7, 7), lineMat);
+  a.rotation.x = -Math.PI / 2; a.position.set(p, 0.05, t); scene.add(a);
+  const b = a.clone(); b.rotation.z = Math.PI / 2; b.position.set(t, 0.05, p); scene.add(b);
+}
+function isRoad(x, z) {
+  if (Math.abs(Math.abs(x) - RING) < ROAD_W / 2 + 1 || Math.abs(Math.abs(z) - RING) < ROAD_W / 2 + 1) return true;
+  for (const p of ROAD_POS) if (Math.abs(x - p) < ROAD_W / 2 + 1 || Math.abs(z - p) < ROAD_W / 2 + 1) return true;
+  return false;
 }
 
-// ---------- Gedung kota (blok di antara jalan) ----------
-const buildingPalette = [0xf2e3c6, 0xe8b4a0, 0xa8d8ea, 0xf7d794, 0xdfe6e9, 0xf8a5c2, 0x81ecec, 0xfdcb6e];
-const neonPalette = [0xff2e88, 0x00e5ff, 0xffe600, 0x7c4dff, 0x00ff9d];
-let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
-for (let bx = 0; bx < 5; bx++) for (let bz = 0; bz < 5; bz++) {
-  const cx = -150 + bx * 60 + (rnd() * 16 - 8), cz = -150 + bz * 60 + (rnd() * 16 - 8);
-  if (Math.abs(cx) < 26 && Math.abs(cz) < 26) continue; // plaza tengah kosong
-  const w = 16 + rnd() * 12, d = 16 + rnd() * 12, h = 10 + rnd() * rnd() * 42;
-  const b = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), M(buildingPalette[(rnd() * buildingPalette.length) | 0]));
-  b.position.set(cx, h / 2, cz); b.castShadow = b.receiveShadow = true; scene.add(b);
-  addCollider(cx, cz, w / 2 + 0.6, d / 2 + 0.6);
-  // Atap
-  const roof = new THREE.Mesh(new THREE.BoxGeometry(w + 0.6, 0.7, d + 0.6), M(0x6d4c41));
-  roof.position.set(cx, h + 0.35, cz); scene.add(roof);
-  // Jendela menyala (emissive planes acak di 2 sisi)
-  const winMat = new THREE.MeshBasicMaterial({ color: 0xffe9a3 });
-  for (let i = 0; i < Math.min(14, h); i++) {
-    if (rnd() < 0.45) continue;
-    const win = new THREE.Mesh(new THREE.PlaneGeometry(1.7, 2.2), winMat);
-    const side = rnd() < 0.5 ? 1 : -1;
-    win.position.set(cx + (rnd() * (w / 2 - 3) - (w / 4 - 1.5)), 2.5 + rnd() * (h - 4), cz + side * (d / 2 + 0.06));
-    if (side < 0) win.rotation.y = Math.PI;
-    scene.add(win);
+// ---------------- Tekstur jendela menyala untuk gedung ----------------
+function windowTexture(base, lit) {
+  const c = document.createElement('canvas'); c.width = 64; c.height = 128;
+  const g = c.getContext('2d');
+  g.fillStyle = base; g.fillRect(0, 0, 64, 128);
+  for (let y = 8; y < 120; y += 14) for (let x = 6; x < 58; x += 12) {
+    g.fillStyle = Math.random() < 0.55 ? lit : 'rgba(10,10,25,0.85)';
+    g.fillRect(x, y, 8, 9);
   }
-  // Papan neon sebagian gedung
-  if (rnd() < 0.4) {
-    const neon = new THREE.Mesh(new THREE.BoxGeometry(w * 0.7, 1.6, 0.3),
-      new THREE.MeshBasicMaterial({ color: neonPalette[(rnd() * neonPalette.length) | 0] }));
-    neon.position.set(cx, h - 2.2, cz + d / 2 + 0.25); scene.add(neon);
+  const t = new THREE.CanvasTexture(c); return t;
+}
+const NEON = [0xff2e88, 0x00e5ff, 0xff9f1a, 0xa55eea, 0x2ed573, 0xffd83d];
+const BUILD_COLORS = ['#3b4a6b', '#5b3a5e', '#274156', '#54423a', '#37474f', '#4a3b63', '#63384a'];
+let seed = 42;
+function rnd() { seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; }
+
+// Gedung-gedung di blok antar-jalan
+for (let bx = 0; bx < 4; bx++) for (let bz = 0; bz < 4; bz++) {
+  const cx = (ROAD_POS[bx] + ROAD_POS[bx + 1]) / 2, cz = (ROAD_POS[bz] + ROAD_POS[bz + 1]) / 2;
+  if (Math.hypot(cx - HILL.x, cz - HILL.z) < HILL.r + 18) continue;   // jangan di bukit
+  if (Math.abs(cx) < 40 && Math.abs(cz) < 40) continue;               // plaza tengah kosong
+  const n = 2 + Math.floor(rnd() * 2);
+  for (let i = 0; i < n; i++) {
+    const w = 13 + rnd() * 9, d = 13 + rnd() * 9, h = 14 + rnd() * rnd() * 42;
+    const x = cx + (rnd() - 0.5) * 26, z = cz + (rnd() - 0.5) * 26;
+    if (isRoad(x, z)) continue;
+    const base = BUILD_COLORS[Math.floor(rnd() * BUILD_COLORS.length)];
+    const tex = windowTexture(base, '#ffd76a');
+    const m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d),
+      new THREE.MeshLambertMaterial({ map: tex }));
+    m.position.set(x, h / 2, z); m.castShadow = true; m.receiveShadow = true; scene.add(m);
+    // strip neon di atap
+    const neon = new THREE.Mesh(new THREE.BoxGeometry(w + 0.5, 0.7, d + 0.5),
+      new THREE.MeshBasicMaterial({ color: NEON[Math.floor(rnd() * NEON.length)] }));
+    neon.position.set(x, h + 0.3, z); scene.add(neon);
+    addCollider(x, z, w / 2, d / 2);
   }
 }
+
 // Plaza tengah: air mancur
-const plaza = new THREE.Mesh(new THREE.CylinderGeometry(11, 11, 0.5, 24), M(0xb2bec3));
-plaza.position.set(0, 0.25, 0); plaza.receiveShadow = true; scene.add(plaza);
-const fountain = new THREE.Mesh(new THREE.CylinderGeometry(2.6, 3.4, 2.4, 12), M(0x74b9ff));
-fountain.position.set(0, 1.4, 0); scene.add(fountain);
-addCollider(0, 0, 11.5, 11.5);
+{
+  const basin = new THREE.Mesh(new THREE.CylinderGeometry(9, 10, 1.4, 20), mat(0x8d9db6));
+  basin.position.set(0, 0.7, 0); basin.castShadow = true; scene.add(basin);
+  const water = new THREE.Mesh(new THREE.CylinderGeometry(8.2, 8.2, 0.4, 20), mat(0x38b6d9));
+  water.position.set(0, 1.35, 0); scene.add(water);
+  const jet = new THREE.Mesh(new THREE.CylinderGeometry(0.35, 0.9, 6, 8),
+    new THREE.MeshBasicMaterial({ color: 0xbfefff, transparent: true, opacity: 0.75 }));
+  jet.position.set(0, 4.4, 0); scene.add(jet);
+  addCollider(0, 0, 10, 10);
+}
 
-// ---------- Pohon palem ----------
-function palm(x, z, s = 1) {
-  const g = new THREE.Group();
-  const trunk = new THREE.Mesh(new THREE.CylinderGeometry(0.32, 0.5, 7, 6), M(0x8d6e63));
-  trunk.position.y = 3.5; trunk.rotation.z = 0.12; trunk.castShadow = true; g.add(trunk);
-  const leafMat = M(0x27ae60, { side: THREE.DoubleSide });
-  for (let i = 0; i < 7; i++) {
-    const leaf = new THREE.Mesh(new THREE.ConeGeometry(0.7, 5.4, 4), leafMat);
-    const a = (i / 7) * Math.PI * 2;
-    leaf.position.set(Math.cos(a) * 2, 7.6, Math.sin(a) * 2);
-    leaf.rotation.set(Math.sin(a) * 1.15, 0, -Math.cos(a) * 1.15);
-    g.add(leaf);
+// ---------------- Pohon palem ----------------
+const trunkMat = mat(0x8a5a33), leafMat = mat(0x27ae60);
+function palm(x, z) {
+  const y = groundHeight(x, z);
+  const trunk = new THREE.Mesh(new THREE.CylinderGeometry(0.32, 0.5, 6.5, 6), trunkMat);
+  trunk.position.set(x, y + 3.25, z); trunk.rotation.z = (rnd() - 0.5) * 0.16; trunk.castShadow = true; scene.add(trunk);
+  for (let i = 0; i < 6; i++) {
+    const leaf = new THREE.Mesh(new THREE.BoxGeometry(4.6, 0.16, 1.1), leafMat);
+    const a = (i / 6) * Math.PI * 2;
+    leaf.position.set(x + Math.cos(a) * 1.9, y + 6.7, z + Math.sin(a) * 1.9);
+    leaf.rotation.y = -a; leaf.rotation.z = -0.42; scene.add(leaf);
   }
-  const coco = new THREE.Mesh(new THREE.SphereGeometry(0.55, 8, 8), M(0x6d4c41));
-  coco.position.y = 6.9; g.add(coco);
-  g.position.set(x, 0, z); g.scale.setScalar(s); scene.add(g);
-  addCollider(x, z, 0.7, 0.7);
+  addCollider(x, z, 0.6, 0.6);
 }
-for (let i = 0; i < 90; i++) {
-  const a = rnd() * Math.PI * 2, r = 158 + rnd() * 22;
-  palm(Math.cos(a) * r, Math.sin(a) * r, 0.85 + rnd() * 0.5);
-}
-for (let i = 0; i < 46; i++) {
-  const x = (rnd() * 2 - 1) * 160, z = (rnd() * 2 - 1) * 160;
-  if (!onRoad(x, z) && Math.hypot(x, z) > 20) palm(x, z, 0.8 + rnd() * 0.45);
+for (let i = 0; i < 150; i++) {
+  // palem di sepanjang pantai & acak di darat, hindari jalan & bukit padat
+  const edge = rnd() < 0.55;
+  let x, z;
+  if (edge) { const s = rnd() < 0.5 ? -1 : 1; if (rnd() < 0.5) { x = s * (192 + rnd() * 6); z = (rnd() - 0.5) * 390; } else { z = s * (192 + rnd() * 6); x = (rnd() - 0.5) * 390; } }
+  else { x = (rnd() - 0.5) * 370; z = (rnd() - 0.5) * 370; }
+  if (isRoad(x, z)) continue;
+  if (Math.hypot(x, z) < 14) continue;
+  palm(x, z);
 }
 // Lampu jalan di persimpangan
-const lampMat = M(0x2d3436); const bulbMat = new THREE.MeshBasicMaterial({ color: 0xffeaa7 });
-ROAD_POS.forEach(x => ROAD_POS.forEach(z => {
-  const pole = new THREE.Mesh(new THREE.CylinderGeometry(0.16, 0.16, 6.4, 6), lampMat);
-  pole.position.set(x + 8, 3.2, z + 8); scene.add(pole);
-  const bulb = new THREE.Mesh(new THREE.SphereGeometry(0.42, 8, 8), bulbMat);
-  bulb.position.set(x + 8, 6.5, z + 8); scene.add(bulb);
-}));
-
-// ---------- Landmark distrik ----------
-// Pelabuhan (selatan): kontainer + crane
-const portPos = new THREE.Vector3(-120, 0, 152);
-const contColors = [0xe74c3c, 0x3498db, 0xe67e22, 0x2ecc71, 0x9b59b6];
-for (let i = 0; i < 10; i++) {
-  const c = new THREE.Mesh(new THREE.BoxGeometry(9, 3.4, 3.6), M(contColors[i % 5]));
-  c.position.set(-146 + (i % 5) * 11, 1.7 + Math.floor(i / 5) * 3.4, 138 + Math.floor(i / 5) * 2);
-  c.castShadow = true; scene.add(c); addCollider(c.position.x, c.position.z, 4.8, 2.1);
-}
-const crane = new THREE.Group();
-const craneMat = M(0xf39c12);
-const c1 = new THREE.Mesh(new THREE.BoxGeometry(1.4, 26, 1.4), craneMat); c1.position.y = 13; crane.add(c1);
-const c2 = new THREE.Mesh(new THREE.BoxGeometry(24, 1.4, 1.4), craneMat); c2.position.set(10, 25, 0); crane.add(c2);
-crane.position.set(-96, 0, 142); scene.add(crane); addCollider(-96, 142, 1.4, 1.4);
-// Klub malam Vice Strip (timur): gedung neon pink
-const clubPos = new THREE.Vector3(152, 0, -60);
-const club = new THREE.Mesh(new THREE.BoxGeometry(20, 13, 16), M(0x2d1b4e));
-club.position.set(146, 6.5, -60); club.castShadow = true; scene.add(club); addCollider(146, -60, 10.6, 8.6);
-const clubSign = new THREE.Mesh(new THREE.BoxGeometry(15, 2.6, 0.4), new THREE.MeshBasicMaterial({ color: 0xff2e88 }));
-clubSign.position.set(135.6, 10.5, -60); clubSign.rotation.y = -Math.PI / 2; scene.add(clubSign);
-// Safehouse Bukit Palma (utara): rumah kru di bukit
-const safePos = new THREE.Vector3(-60, 0, -152);
-const hill = new THREE.Mesh(new THREE.ConeGeometry(34, 13, 24), M(0x2f8f4e));
-hill.position.set(-60, 0, -168); hill.receiveShadow = true; scene.add(hill);
-const safeHouse = new THREE.Mesh(new THREE.BoxGeometry(13, 6, 11), M(0xffe0b2));
-safeHouse.position.set(-60, 3, -150); safeHouse.castShadow = true; scene.add(safeHouse); addCollider(-60, -150, 7, 6);
-const safeSign = new THREE.Mesh(new THREE.BoxGeometry(9, 1.8, 0.4), new THREE.MeshBasicMaterial({ color: 0x00ff9d }));
-safeSign.position.set(-60, 7.2, -144.4); scene.add(safeSign);
-// Pay 'n Spray (timur laut): garasi hijau
-const sprayPos = new THREE.Vector3(120, 0, -120);
-const spray = new THREE.Mesh(new THREE.BoxGeometry(15, 6.5, 13), M(0x1e7a46));
-spray.position.set(133, 3.25, -120); scene.add(spray); addCollider(133, -120, 8, 7);
-const spraySign = new THREE.Mesh(new THREE.BoxGeometry(11, 2, 0.4), new THREE.MeshBasicMaterial({ color: 0x2bff88 }));
-spraySign.position.set(125.2, 5.4, -120); spraySign.rotation.y = -Math.PI / 2; scene.add(spraySign);
-
-// ---------- Pabrik mobil ----------
-function makeCar(color, isPolice = false, isPlayerCar = false) {
-  const g = new THREE.Group();
-  const bodyMat = isPolice ? M(0xf5f6fa, { roughness: 0.4, metalness: 0.3 }) : M(color, { roughness: 0.35, metalness: 0.35 });
-  const body = new THREE.Mesh(new THREE.BoxGeometry(2.1, 0.62, 4.4), bodyMat);
-  body.position.y = 0.62; body.castShadow = true; g.add(body);
-  const hood = new THREE.Mesh(new THREE.BoxGeometry(1.9, 0.3, 1.1), bodyMat);
-  hood.position.set(0, 0.82, -1.85); g.add(hood);
-  const cabin = new THREE.Mesh(new THREE.BoxGeometry(1.8, 0.62, 2.1), M(0x1a2733, { roughness: 0.15, metalness: 0.6 }));
-  cabin.position.set(0, 1.2, 0.25); cabin.castShadow = true; g.add(cabin);
-  if (isPolice) {
-    const stripe = new THREE.Mesh(new THREE.BoxGeometry(2.14, 0.3, 4.42), M(0x1a1a2e));
-    stripe.position.y = 0.5; g.add(stripe);
-    const bar = new THREE.Mesh(new THREE.BoxGeometry(1.5, 0.22, 0.5), M(0x222222));
-    bar.position.set(0, 1.62, 0.25); g.add(bar);
-    const lR = new THREE.Mesh(new THREE.BoxGeometry(0.62, 0.2, 0.44), new THREE.MeshBasicMaterial({ color: 0xff2222 }));
-    lR.position.set(-0.4, 1.64, 0.25); g.add(lR);
-    const lB = new THREE.Mesh(new THREE.BoxGeometry(0.62, 0.2, 0.44), new THREE.MeshBasicMaterial({ color: 0x2266ff }));
-    lB.position.set(0.4, 1.64, 0.25); g.add(lB);
-    g.userData.lightR = lR; g.userData.lightB = lB;
-  }
-  if (isPlayerCar) {
-    const spoiler = new THREE.Mesh(new THREE.BoxGeometry(2.2, 0.12, 0.5), M(0x14181f));
-    spoiler.position.set(0, 1.12, 2.05); g.add(spoiler);
-    const stripe = new THREE.Mesh(new THREE.BoxGeometry(0.5, 0.05, 4.42), new THREE.MeshBasicMaterial({ color: 0xffe600 }));
-    stripe.position.y = 0.95; g.add(stripe);
-  }
-  const wheelGeo = new THREE.CylinderGeometry(0.42, 0.42, 0.3, 14);
-  const wheelMat = M(0x14181f, { roughness: 1 });
-  const wheels = [];
-  [[-1.02, -1.45], [1.02, -1.45], [-1.02, 1.45], [1.02, 1.45]].forEach(([x, z]) => {
-    const w = new THREE.Mesh(wheelGeo, wheelMat);
-    w.rotation.z = Math.PI / 2; w.position.set(x, 0.42, z); w.castShadow = true; g.add(w); wheels.push(w);
-  });
-  const hl = new THREE.Mesh(new THREE.BoxGeometry(1.7, 0.2, 0.08), new THREE.MeshBasicMaterial({ color: 0xfff6b0 }));
-  hl.position.set(0, 0.72, -2.22); g.add(hl);
-  const tl = new THREE.Mesh(new THREE.BoxGeometry(1.7, 0.18, 0.08), new THREE.MeshBasicMaterial({ color: 0xff2e2e }));
-  tl.position.set(0, 0.74, 2.22); g.add(tl);
-  g.userData.wheels = wheels;
-  scene.add(g);
-  return g;
+const lampHeads = [];
+for (const px of ROAD_POS) for (const pz of ROAD_POS) {
+  const pole = new THREE.Mesh(new THREE.CylinderGeometry(0.14, 0.14, 5.6, 5), mat(0x555f6e));
+  pole.position.set(px + 8.6, 2.8, pz + 8.6); scene.add(pole);
+  const head = new THREE.Mesh(new THREE.SphereGeometry(0.42, 8, 8), new THREE.MeshBasicMaterial({ color: 0xffe9a8 }));
+  head.position.set(px + 8.6, 5.8, pz + 8.6); scene.add(head); lampHeads.push(head);
 }
 
-// ---------- Karakter pemain (jalan kaki) ----------
-const hero = new THREE.Group();
+// ---------------- Landmark 3 distrik ----------------
+const portPos = new THREE.Vector3(-150, 0, 148);       // Pelabuhan Sagara (barat daya)
+const clubPos = new THREE.Vector3(150, 0, -6);         // Vice Strip (timur)
+const safePos = new THREE.Vector3(HILL.x, 0, HILL.z);  // Bukit Palma (barat laut)
+safePos.y = groundHeight(safePos.x, safePos.z);
+
+// Pelabuhan: kontainer warna-warni + 2 crane
 {
-  const legs = new THREE.Mesh(new THREE.BoxGeometry(0.55, 0.75, 0.32), M(0x22304a)); legs.position.y = 0.38; hero.add(legs);
-  const torso = new THREE.Mesh(new THREE.BoxGeometry(0.72, 0.8, 0.4), M(0xff7518)); torso.position.y = 1.15; torso.castShadow = true; hero.add(torso);
-  const head = new THREE.Mesh(new THREE.SphereGeometry(0.3, 12, 12), M(0xf1c27d)); head.position.y = 1.85; head.castShadow = true; hero.add(head);
-  const cap = new THREE.Mesh(new THREE.CylinderGeometry(0.32, 0.34, 0.16, 12), M(0x14181f)); cap.position.y = 2.08; hero.add(cap);
+  const CC = [0xe84118, 0x0097e6, 0x44bd32, 0xfbc531, 0x9c27b0];
+  for (let i = 0; i < 14; i++) {
+    const x = -178 + (i % 5) * 13, z = 128 + Math.floor(i / 5) * 13;
+    if (isRoad(x, z)) continue;
+    const lvl = i % 3 === 0 ? 1 : 0;
+    box(11, 4.6, 5.4, CC[i % CC.length], x, 2.3 + lvl * 4.6, z);
+    addCollider(x, z, 5.5, 2.7);
+  }
+  for (const cx of [-168, -128]) {
+    box(1.6, 26, 1.6, 0xf39c12, cx, 13, 158); box(1.6, 26, 1.6, 0xf39c12, cx + 12, 13, 158);
+    const arm = box(30, 1.6, 1.6, 0xf39c12, cx + 6, 25, 158); arm.rotation.y = 0.0;
+    addCollider(cx, 158, 1, 1); addCollider(cx + 12, 158, 1, 1);
+  }
+  const sign = box(34, 3.4, 0.6, 0x0097e6, -150, 8, 122);
+  sign.material = new THREE.MeshBasicMaterial({ color: 0x0097e6 });
 }
-hero.visible = false; scene.add(hero);
+// Vice Strip: klub malam neon pink + papan nama
+let clubSign;
+{
+  const club = box(30, 17, 20, 0x2c1230, clubPos.x, 8.5, clubPos.z);
+  club.material = new THREE.MeshLambertMaterial({ map: windowTexture('#2c1230', '#ff6bd5') });
+  addCollider(clubPos.x, clubPos.z, 15, 10);
+  clubSign = new THREE.Mesh(new THREE.BoxGeometry(26, 3.2, 0.7), new THREE.MeshBasicMaterial({ color: 0xff2e88 }));
+  clubSign.position.set(clubPos.x, 19.4, clubPos.z - 10.4); scene.add(clubSign);
+  for (let i = -2; i <= 2; i++) palm(clubPos.x + i * 9, clubPos.z + 15);
+}
+// Bukit Palma: safehouse kru di puncak
+{
+  const y = safePos.y;
+  const house = box(15, 6, 12, 0xd9a05b, safePos.x, y + 3, safePos.z);
+  house.castShadow = true;
+  const roof = new THREE.Mesh(new THREE.ConeGeometry(11.5, 4.4, 4), mat(0xa93226));
+  roof.position.set(safePos.x, y + 8.2, safePos.z); roof.rotation.y = Math.PI / 4; roof.castShadow = true; scene.add(roof);
+  addCollider(safePos.x, safePos.z, 7.5, 6);
+  const flag = new THREE.Mesh(new THREE.BoxGeometry(4.4, 2.4, 0.2), new THREE.MeshBasicMaterial({ color: 0xffd83d }));
+  flag.position.set(safePos.x + 6, y + 12, safePos.z); scene.add(flag);
+  box(0.25, 9, 0.25, 0x777777, safePos.x + 6, y + 7, safePos.z);
+}
+// Pay 'n Spray (timur laut): garasi hijau
+const sprayPos = new THREE.Vector3(150, 0, -140);
+{
+  box(20, 8, 16, 0x1e6b3a, sprayPos.x, 4, sprayPos.z);
+  addCollider(sprayPos.x, sprayPos.z, 10, 8);
+  const door = new THREE.Mesh(new THREE.BoxGeometry(13, 6, 0.5), new THREE.MeshBasicMaterial({ color: 0x2ed573 }));
+  door.position.set(sprayPos.x, 3, sprayPos.z + 8.3); scene.add(door);
+}
 
-// ---------- Mobil pemain ----------
-const car = makeCar(0xff6b1a, false, true);
-car.position.set(10, 0, 26); car.rotation.y = Math.PI;
-const carState = { pos: car.position, heading: Math.PI, speed: 0, steer: 0 };
-const heroState = { pos: new THREE.Vector3(14, 0, 26), heading: Math.PI, speed: 0 };
+// Penanda objektif: pilar cahaya + cincin berputar
+const marker = new THREE.Group();
+const beam = new THREE.Mesh(new THREE.CylinderGeometry(2.6, 2.6, 46, 14, 1, true),
+  new THREE.MeshBasicMaterial({ color: 0xffd83d, transparent: true, opacity: 0.4, side: THREE.DoubleSide, depthWrite: false }));
+beam.position.y = 23; marker.add(beam);
+const ringMesh = new THREE.Mesh(new THREE.TorusGeometry(4.4, 0.32, 8, 28), new THREE.MeshBasicMaterial({ color: 0xffd83d }));
+ringMesh.rotation.x = Math.PI / 2; ringMesh.position.y = 0.5; marker.add(ringMesh);
+marker.visible = false; scene.add(marker);
+// Penanda Pay 'n Spray (hijau, selalu tampil)
+const sprayMarker = marker.clone();
+sprayMarker.children[0].material = new THREE.MeshBasicMaterial({ color: 0x2ed573, transparent: true, opacity: 0.3, side: THREE.DoubleSide, depthWrite: false });
+sprayMarker.children[1].material = new THREE.MeshBasicMaterial({ color: 0x2ed573 });
+sprayMarker.position.set(sprayPos.x, 0, sprayPos.z + 15); scene.add(sprayMarker);
 
-// ---------- Mobil lalu lintas ----------
+// ---------------- Permata Sagara (kolektibel) ----------------
+const gems = [];
+const gemGeo = new THREE.OctahedronGeometry(1.15);
+const gemMat = new THREE.MeshBasicMaterial({ color: 0x54f2ff });
+const GEM_SPOTS = [
+  [0, -176], [-176, 0], [176, 60], [40, 176], [-60, -64], [96, 96], [-96, -32],
+  [150, 90], [-176, -120], [64, -150], [-40, 128], [120, -64], [-120, 40], [30, -30], [176, -176],
+];
+for (const [gx, gz] of GEM_SPOTS) {
+  const g = new THREE.Mesh(gemGeo, gemMat);
+  g.position.set(gx, groundHeight(gx, gz) + 1.6, gz);
+  scene.add(g); gems.push(g);
+}
+
+// ---------------- Pabrik mobil low-poly ----------------
+function makeCar(color, isPolice, isPlayer) {
+  const grp = new THREE.Group();
+  const body = new THREE.Mesh(new THREE.BoxGeometry(2.1, 0.62, 4.3), mat(color));
+  body.position.y = 0.62; body.castShadow = true; grp.add(body);
+  const hood = new THREE.Mesh(new THREE.BoxGeometry(1.9, 0.3, 1.0), mat(color));
+  hood.position.set(0, 0.52, -2.35); grp.add(hood);
+  const cabin = new THREE.Mesh(new THREE.BoxGeometry(1.8, 0.62, 2.0),
+    mat(isPolice ? 0xf5f6fa : 0x1d2733, { }));
+  cabin.position.set(0, 1.2, 0.25); cabin.castShadow = true; grp.add(cabin);
+  const stripe = new THREE.Mesh(new THREE.BoxGeometry(2.14, 0.2, 4.34),
+    new THREE.MeshBasicMaterial({ color: isPlayer ? 0xffd83d : (isPolice ? 0x1e3799 : color) }));
+  stripe.position.y = 0.86; grp.add(stripe);
+  const wheelGeo = new THREE.CylinderGeometry(0.42, 0.42, 0.3, 10);
+  const wheelMat = mat(0x14141c);
+  const wheels = [];
+  for (const [wx, wz] of [[-1.0, -1.45], [1.0, -1.45], [-1.0, 1.45], [1.0, 1.45]]) {
+    const w = new THREE.Mesh(wheelGeo, wheelMat);
+    w.rotation.z = Math.PI / 2; w.position.set(wx, 0.42, wz); grp.add(w); wheels.push(w);
+  }
+  const hl = new THREE.Mesh(new THREE.BoxGeometry(1.7, 0.22, 0.1), new THREE.MeshBasicMaterial({ color: 0xfff6b7 }));
+  hl.position.set(0, 0.68, -2.68); grp.add(hl);
+  const tl = new THREE.Mesh(new THREE.BoxGeometry(1.7, 0.2, 0.1), new THREE.MeshBasicMaterial({ color: 0xff3838 }));
+  tl.position.set(0, 0.72, 2.18); grp.add(tl);
+  let lightRed = null, lightBlue = null;
+  if (isPolice) {
+    const barBase = new THREE.Mesh(new THREE.BoxGeometry(1.5, 0.16, 0.5), mat(0x111118));
+    barBase.position.set(0, 1.6, 0.25); grp.add(barBase);
+    lightRed = new THREE.Mesh(new THREE.BoxGeometry(0.66, 0.24, 0.44), new THREE.MeshBasicMaterial({ color: 0xff2222 }));
+    lightRed.position.set(-0.38, 1.78, 0.25); grp.add(lightRed);
+    lightBlue = new THREE.Mesh(new THREE.BoxGeometry(0.66, 0.24, 0.44), new THREE.MeshBasicMaterial({ color: 0x2266ff }));
+    lightBlue.position.set(0.38, 1.78, 0.25); grp.add(lightBlue);
+  }
+  scene.add(grp);
+  return { mesh: grp, wheels, lightRed, lightBlue, speed: 0, angle: 0, hp: 100 };
+}
+
+// ---------------- Mobil pemain ----------------
+const car = makeCar(0xe84118, false, true);
+car.mesh.position.set(0, 0, 96); car.angle = Math.PI; // menghadap utara (-z)
+car.mesh.rotation.y = car.angle;
+let carSpeed = 0, carHealth = 100;
+
+// ---------------- Karakter jalan kaki ----------------
+const walker = new THREE.Group();
+{
+  const legs = new THREE.Mesh(new THREE.BoxGeometry(0.62, 0.75, 0.34), mat(0x22304a)); legs.position.y = 0.38; walker.add(legs);
+  const torso = new THREE.Mesh(new THREE.BoxGeometry(0.78, 0.85, 0.4), mat(0xff9f1a)); torso.position.y = 1.18; torso.castShadow = true; walker.add(torso);
+  const head = new THREE.Mesh(new THREE.SphereGeometry(0.3, 10, 10), mat(0xc68642)); head.position.y = 1.86; walker.add(head);
+  const cap = new THREE.Mesh(new THREE.CylinderGeometry(0.33, 0.36, 0.16, 10), mat(0x111118)); cap.position.y = 2.08; walker.add(cap);
+  const bag = new THREE.Mesh(new THREE.BoxGeometry(0.5, 0.6, 0.24), mat(0xff6b35)); bag.position.set(0.1, 1.2, 0.34); walker.add(bag);
+}
+walker.visible = false; scene.add(walker);
+const foot = { x: 3, z: 96, angle: Math.PI, bob: 0 };
+
+// ---------------- Lalu lintas AI ----------------
 const traffic = [];
-const trafficColors = [0x3498db, 0xe74c3c, 0x2ecc71, 0xf1c40f, 0x9b59b6, 0xecf0f1, 0x1abc9c, 0xe67e22];
+const TRAFFIC_COLORS = [0x0097e6, 0x44bd32, 0xfbc531, 0x9c27b0, 0xecf0f1, 0xe67e22, 0x1abc9c, 0xd63031];
+const LANES = [];
+for (const p of ROAD_POS) { LANES.push({ axis: 'z', fixed: p + 3.4, dir: 1 }); LANES.push({ axis: 'z', fixed: p - 3.4, dir: -1 }); LANES.push({ axis: 'x', fixed: p + 3.4, dir: 1 }); LANES.push({ axis: 'x', fixed: p - 3.4, dir: -1 }); }
 for (let i = 0; i < 10; i++) {
-  const vertical = rnd() < 0.5;
-  const lane = ROAD_POS[(rnd() * ROAD_POS.length) | 0];
-  const t = { mesh: makeCar(trafficColors[i % trafficColors.length]), vertical, lane, dir: rnd() < 0.5 ? 1 : -1, speed: 9 + rnd() * 7, hp: 30 };
-  if (vertical) t.mesh.position.set(lane + (t.dir > 0 ? -2.8 : 2.8), 0, (rnd() * 2 - 1) * 140);
-  else t.mesh.position.set((rnd() * 2 - 1) * 140, 0, lane + (t.dir > 0 ? 2.8 : -2.8));
-  t.mesh.rotation.y = vertical ? (t.dir > 0 ? Math.PI : 0) : (t.dir > 0 ? Math.PI / 2 : -Math.PI / 2);
+  const t = makeCar(TRAFFIC_COLORS[i % TRAFFIC_COLORS.length], false, false);
+  const lane = LANES[(i * 4) % LANES.length];
+  t.lane = lane; t.pos = -180 + i * 36; t.cruise = 13 + (i % 4) * 2.2;
   traffic.push(t);
 }
-// Mobil parkir (bisa ditabrak = bintang naik)
-const parked = [];
-[[-58, 40], [62, -38], [-122, -80], [30, 122], [-30, -122], [122, 80]].forEach(([x, z], i) => {
-  const p = makeCar(trafficColors[(i + 3) % trafficColors.length]);
-  p.position.set(x, 0, z); p.rotation.y = rnd() * Math.PI; scene.add(p);
-  parked.push({ mesh: p, hp: 30, hitCooldown: 0 });
-});
+function placeTraffic(t) {
+  const L = t.lane;
+  if (L.axis === 'z') { t.mesh.position.set(L.fixed, 0, t.pos); t.mesh.rotation.y = L.dir > 0 ? Math.PI : 0; }
+  else { t.mesh.position.set(t.pos, 0, L.fixed); t.mesh.rotation.y = L.dir > 0 ? -Math.PI / 2 : Math.PI / 2; }
+}
 
-// ---------- Polisi ----------
+// ---------------- Pejalan kaki NPC ----------------
+const peds = [];
+const PED_COLORS = [0xff6b81, 0x7ed6df, 0xfbc531, 0x2ed573, 0xeccc68, 0xa55eea];
+for (let i = 0; i < 14; i++) {
+  const g = new THREE.Group();
+  const b = new THREE.Mesh(new THREE.BoxGeometry(0.6, 0.95, 0.34), mat(PED_COLORS[i % PED_COLORS.length])); b.position.y = 1.0; b.castShadow = true; g.add(b);
+  const h = new THREE.Mesh(new THREE.SphereGeometry(0.27, 8, 8), mat(0xd9a066)); h.position.y = 1.72; g.add(h);
+  const l = new THREE.Mesh(new THREE.BoxGeometry(0.5, 0.6, 0.3), mat(0x2f3542)); l.position.y = 0.3; g.add(l);
+  scene.add(g);
+  const horiz = i % 2 === 0;
+  peds.push({ mesh: g, horiz, fixed: ROAD_POS[i % ROAD_POS.length] + 9.5, pos: -180 + i * 27, dir: i % 3 === 0 ? -1 : 1, speed: 1.6 + (i % 3) * 0.5, bob: i });
+}
+
+// ---------------- Polisi ----------------
 const police = [];
 function spawnPolice() {
-  const p = { mesh: makeCar(0xffffff, true), speed: 0, heading: 0 };
-  const a = rnd() * Math.PI * 2;
-  p.mesh.position.set(car.position.x + Math.cos(a) * 55, 0, car.position.z + Math.sin(a) * 55);
-  scene.add(p.mesh); police.push(p);
+  const p = makeCar(0xf5f6fa, true, false);
+  const a = Math.random() * Math.PI * 2;
+  const px = (S.inCar ? car.mesh.position.x : foot.x) + Math.cos(a) * 65;
+  const pz = (S.inCar ? car.mesh.position.z : foot.z) + Math.sin(a) * 65;
+  p.mesh.position.set(Math.max(-190, Math.min(190, px)), 0, Math.max(-190, Math.min(190, pz)));
+  p.speed = 0; police.push(p);
 }
-function clearPolice() { police.forEach(p => scene.remove(p.mesh)); police.length = 0; }
+function clearPolice() { for (const p of police) scene.remove(p.mesh); police.length = 0; }
+function addWanted(n, silent) {
+  const before = S.wanted;
+  S.wanted = Math.max(0, Math.min(5, S.wanted + n));
+  S.heat = Math.max(S.heat, S.wanted);
+  if (S.wanted > before && !silent) { showToast('⭐ Bintang buronan naik: ' + S.wanted); beep(180, .25, 'sawtooth', .06); }
+  refreshHUD();
+}
 
-// ---------- Penanda objektif (beacon kuning GTA) ----------
-const beacon = new THREE.Mesh(
-  new THREE.CylinderGeometry(4.2, 4.2, 30, 20, 1, true),
-  new THREE.MeshBasicMaterial({ color: 0xffd83d, transparent: true, opacity: 0.35, side: THREE.DoubleSide, depthWrite: false })
-);
-beacon.position.y = 15; scene.add(beacon);
-const beaconRing = new THREE.Mesh(new THREE.RingGeometry(3.4, 4.2, 24), new THREE.MeshBasicMaterial({ color: 0xffd83d, side: THREE.DoubleSide }));
-beaconRing.rotation.x = -Math.PI / 2; beaconRing.position.y = 0.12; scene.add(beaconRing);
-
-// ---------- Elemen HUD ----------
+// ---------------- HUD ----------------
 const el = id => document.getElementById(id);
-const hud = { money: el('money'), wanted: el('wanted'), health: el('healthBar'), armour: el('armourBar'),
-  rank: el('rankBox'), rp: el('rpBar'), mTitle: el('missionTitle'), mText: el('missionText'), mDist: el('missionDist'),
-  speed: el('speed'), gear: el('gear'), banner: el('banner'), bTitle: el('bannerTitle'), bSub: el('bannerSub'),
-  toast: el('toast'), bustWrap: el('bustWrap'), bustBar: el('bustBar'), crew: el('crewText'), compass: el('compass') };
-let bannerTimer = null;
-function showBanner(title, sub = '', ms = 3200) {
-  hud.bTitle.textContent = title; hud.bSub.textContent = sub;
-  hud.banner.style.opacity = 1;
-  clearTimeout(bannerTimer);
-  bannerTimer = setTimeout(() => hud.banner.style.opacity = 0, ms);
-}
-let toastTimer = null;
-function showToast(text, ms = 2600) {
-  hud.toast.textContent = text; hud.toast.style.opacity = 1;
-  clearTimeout(toastTimer);
-  toastTimer = setTimeout(() => hud.toast.style.opacity = 0, ms);
-}
-function repStars(v) { return '★'.repeat(Math.min(5, v)) + '☆'.repeat(Math.max(0, 5 - v)); }
+const hud = {
+  money: el('money'), wanted: el('wanted'), health: el('healthBar'), armour: el('armourBar'),
+  rank: el('rankBox'), rp: el('rpBar'), mTitle: el('missionTitle'), mText: el('missionText'),
+  mDist: el('missionDist'), toast: el('toast'), banner: el('banner'), bTitle: el('bannerTitle'),
+  bSub: el('bannerSub'), bustWrap: el('bustWrap'), bustBar: el('bustBar'), crew: el('crewText'),
+  speed: el('speed'), gear: el('gear'), compass: el('compass'), gems: el('gemCount'),
+};
+function repStars(n) { return '★'.repeat(n) + '☆'.repeat(5 - n); }
 function refreshHUD() {
-  hud.money.textContent = '$' + S.money.toLocaleString('id-ID');
-  hud.wanted.innerHTML = [1,2,3,4,5].map(i => `<span class="${i <= S.wanted ? 'on' : ''}">★</span>`).join('');
+  hud.money.textContent = '$' + Math.floor(S.money);
+  hud.wanted.innerHTML = [1, 2, 3, 4, 5].map(i => `<span class="${i <= S.wanted ? 'on' : ''}">★</span>`).join('');
   hud.health.style.width = Math.max(0, S.health) + '%';
   hud.armour.style.width = Math.max(0, S.armour) + '%';
-  const cur = RANKS[S.rank - 1], next = RANKS[S.rank];
-  hud.rank.textContent = `RANK ${S.rank} — ${cur.name}` + (next ? ` • RP ${S.rp}/${next.rp}` : ` • RP ${S.rp}`);
-  hud.rp.style.width = next ? Math.min(100, (S.rp - cur.rp) / (next.rp - cur.rp) * 100) + '%' : '100%';
+  const cur = RANKS[S.rank - 1], nxt = RANKS[S.rank];
+  hud.rank.textContent = 'RANK ' + S.rank + ' — ' + cur.name;
+  hud.rp.style.width = nxt ? Math.min(100, ((S.rp - cur.need) / (nxt.need - cur.need)) * 100) + '%' : '100%';
   el('rep-port').textContent = repStars(S.standing.port);
   el('rep-vice').textContent = repStars(S.standing.vice);
   el('rep-hill').textContent = repStars(S.standing.hill);
+  hud.gems.textContent = S.gems + '/15';
   const total = S.standing.port + S.standing.vice + S.standing.hill;
   hud.crew.textContent = CREW[Math.min(CREW.length - 1, Math.floor(total / 2))];
 }
+let toastTimer = 0;
+function showToast(msg) { hud.toast.textContent = msg; hud.toast.style.opacity = 1; toastTimer = 2.6; }
+let bannerTimer = 0;
+function showBanner(title, sub) {
+  hud.bTitle.textContent = title; hud.bSub.textContent = sub || '';
+  hud.banner.style.opacity = 1; bannerTimer = 3.2;
+}
 function addRP(n) {
   S.rp += n;
-  while (S.rank < RANKS.length && S.rp >= RANKS[S.rank].rp) {
+  while (S.rank < RANKS.length && S.rp >= RANKS[S.rank].need) {
     S.rank++;
-    showBanner('RANK NAIK!', `Sekarang: RANK ${S.rank} — ${RANKS[S.rank - 1].name}`);
-    S.health = Math.min(100, S.health + 25);
+    showBanner('NAIK RANK!', 'Rank ' + S.rank + ' — ' + RANKS[S.rank - 1].name);
+    jingle(true);
   }
+  refreshHUD();
 }
-let heat = 0;
-function commitCrime(amount = 0.55) {
-  heat += amount; S.wantedTimer = 0;
-  while (heat >= 1 && S.wanted < 5) { heat -= 1; S.wanted++; showToast('⭐ Bintang buronan naik — polisi Sagara bergerak!'); }
-}
-function damage(n) {
-  if (S.armour > 0) { const absorbed = Math.min(S.armour, n * 0.7); S.armour -= absorbed; n -= absorbed; }
-  S.health -= n;
-  if (S.health <= 0 && !S.dead) endGame(false);
+function damagePlayer(n) {
+  if (S.armour > 0) { const take = Math.min(S.armour, n * 0.7); S.armour -= take; n -= take; }
+  S.health -= n; refreshHUD();
+  if (S.health <= 0 && !S.over) gameOver(false);
 }
 
-// ---------- Sistem misi ----------
-let objective = null; // {pos, radius, label}
-let missionTimer = null; // detik tersisa / null
-let race = null;         // {points, idx, rival, rivalIdx}
-let targetCar = null;    // {mesh, hp, heading, speed}
-const sprayCooldown = { t: 0 };
-
-function setObjective(pos, label, radius = 8) {
-  objective = { pos: pos.clone(), radius, label };
-  beacon.visible = beaconRing.visible = true;
-  beacon.position.set(pos.x, 15, pos.z); beaconRing.position.set(pos.x, 0.12, pos.z);
+// ---------------- Objektif & misi ----------------
+let objective = null; // {pos:Vector3, label, onArrive}
+let missionTimer = null;
+function setObjective(pos, label, onArrive) {
+  objective = { pos, label, onArrive: onArrive || null };
+  marker.position.set(pos.x, groundHeight(pos.x, pos.z), pos.z);
+  marker.visible = true;
 }
-function clearObjective() { objective = null; beacon.visible = beaconRing.visible = false; }
-
-const MISSIONS = [
-  { title: 'MISI 1 — PAKET DARI PELABUHAN', district: 'port',
-    text: 'Ambil paket "ikan segar" dari kontainer di Pelabuhan Sagara. Abaikan baunya.',
-    start() { setObjective(portPos, 'Ambil paket di pelabuhan'); },
-    arrive() { commitCrime(1.2); showToast('📦 Paket diambil! Polisi mencium sesuatu…'); startMission(1); } },
-  { title: 'MISI 2 — ANTAR KE VICE STRIP', district: 'vice',
-    text: 'Antar paket ke klub malam Vice Strip sebelum 90 detik. Jangan sampai rusak!',
-    start() { setObjective(clubPos, 'Antar paket ke klub Vice Strip'); missionTimer = 90; },
-    arrive() { reward(400, 120, 'vice', 2, 'PAKET TERKIRIM! +$400'); startMission(2); } },
-  { title: 'MISI 3 — BALAPAN PANTAI LIAR', district: 'vice',
-    text: 'Balapan jalanan keliling lingkar pantai melawan Ratu Strip. Lewati semua checkpoint sebelum dia!',
-    start() { startRace(); },
-    arrive() {} },
-  { title: 'MISI 4 — HAJAR KURIR RIVAL', district: 'port',
-    text: 'Kurir geng sebelah membawa muatan kita. Kejar dan tabrak mobil ungunya sampai hancur!',
-    start() { spawnTarget(); },
-    arrive() {} },
-  { title: 'MISI 5 — KABUR KE SAFEHOUSE', district: 'hill',
-    text: 'Polisi di mana-mana! Tembus ke safehouse Kru Sagara di Bukit Palma dengan bintang 3.',
-    start() { S.wanted = Math.max(3, S.wanted); setObjective(safePos, 'Capai safehouse Bukit Palma'); },
-    arrive() { S.wanted = 0; clearPolice(); reward(900, 300, 'hill', 3, 'KAMU LOLOS! +$900'); finishStory(); } },
-];
-function reward(money, rp, district, standingPts, bannerText) {
-  S.money += money; S.standing[district] = Math.min(5, S.standing[district] + standingPts);
-  showBanner('MISI SELESAI', bannerText + ` • +${rp} RP`); addRP(rp); refreshHUD();
+function clearObjective() { objective = null; marker.visible = false; }
+function setMissionText() {
+  if (S.freeRoam) return;
+  const m = MISSIONS[S.missionIndex];
+  hud.mTitle.textContent = m.title; hud.mText.textContent = m.text;
+}
+function reward(money, rp, district, pts, bannerText) {
+  S.money += money;
+  if (district) S.standing[district] = Math.min(5, S.standing[district] + pts);
+  showBanner('MISI SELESAI', bannerText + ' • +$' + money + ' • +' + rp + ' RP');
+  jingle(true); addRP(rp); refreshHUD();
 }
 function startMission(i) {
-  S.missionIndex = i; missionTimer = null;
-  const m = MISSIONS[i]; if (!m) return;
-  hud.mTitle.textContent = m.title; hud.mText.textContent = m.text;
-  m.start(); refreshHUD();
+  if (race && race.rivalCar) scene.remove(race.rivalCar.mesh);
+  if (rival && rival.car) scene.remove(rival.car.mesh);
+  S.missionIndex = i; missionTimer = null; race = null; rival = null;
+  setMissionText(); MISSIONS[i].start(); refreshHUD();
 }
 function failMission(reason) {
-  showBanner('MISI GAGAL', reason + ' — coba lagi!');
-  if (race) { scene.remove(race.rival.mesh); race = null; }
-  if (targetCar) { scene.remove(targetCar.mesh); targetCar = null; }
+  if (S.freeRoam) { showBanner('GAGAL', reason); jingle(false); freeRoamObjective(); return; }
+  showBanner('MISI GAGAL', reason + ' — coba lagi!'); jingle(false);
+  S.wanted = Math.max(0, S.wanted - 1); clearPolice();
   startMission(S.missionIndex);
 }
-function finishStory() {
-  S.freeRoam = true;
-  showBanner('👑 LEGENDA SAGARA 👑', 'Semua misi utama selesai! Balapan & antar paket bebas kini terbuka selamanya.', 6000);
-  freeRoamObjective();
-}
-function freeRoamObjective() {
-  hud.mTitle.textContent = 'FREE ROAM — KERJAAN JALANAN';
-  if (Math.random() < 0.5) {
-    const spots = [[portPos, 'Pelabuhan Sagara', 'port'], [clubPos, 'Vice Strip', 'vice'], [safePos, 'Bukit Palma', 'hill']];
-    const [pos, name, dist] = spots[(Math.random() * spots.length) | 0];
-    hud.mText.textContent = `Antar paket kilat ke ${name}. Bayaran $250 + 60 RP.`;
-    setObjective(pos, 'Antar paket ke ' + name);
-    objective.onArrive = () => { reward(250, 60, dist, 1, 'PAKET TERKIRIM! +$250'); freeRoamObjective(); };
-  } else {
-    hud.mText.textContent = 'Balapan mini: capai penanda sebelum 45 detik. Bayaran $300 + 80 RP.';
-    const pos = new THREE.Vector3(ROAD_POS[(Math.random() * 5) | 0], 0, ROAD_POS[(Math.random() * 5) | 0]);
-    missionTimer = 45; setObjective(pos, 'Garis finis balapan mini');
-    objective.onArrive = () => { missionTimer = null; S.money += 300; showBanner('MENANG BALAPAN!', '+$300 • +80 RP'); addRP(80); refreshHUD(); freeRoamObjective(); };
+function completeMission() {
+  const m = MISSIONS[S.missionIndex];
+  reward(m.pay, m.rp, m.district, m.pts, m.done);
+  if (S.missionIndex + 1 < MISSIONS.length) startMission(S.missionIndex + 1);
+  else {
+    S.freeRoam = true;
+    hud.mTitle.textContent = 'FREE ROAM — LEGENDA JALANAN';
+    hud.mText.textContent = 'Cerita utama tamat! Pulau ini milikmu. Ambil pekerjaan kilat & balapan mini tanpa akhir, kumpulkan semua permata.';
+    showBanner('CERITA UTAMA TAMAT! 👑', 'Free roam terbuka — Sagara Heat tidak pernah tidur.');
+    freeRoamObjective();
   }
 }
-// Balapan misi 3
-function startRace() {
-  const pts = [new THREE.Vector3(152, 0, 0), new THREE.Vector3(120, 0, 120), new THREE.Vector3(0, 0, 152),
-    new THREE.Vector3(-120, 0, 120), new THREE.Vector3(-152, 0, 0), new THREE.Vector3(-120, 0, -120),
-    new THREE.Vector3(0, 0, -152), new THREE.Vector3(120, 0, -120), clubPos.clone()];
-  const rival = { mesh: makeCar(0xff2e88), idx: 0, speed: 0 };
-  rival.mesh.position.set(30, 0, 140); scene.add(rival.mesh);
-  race = { points: pts, idx: 0, rival };
-  missionTimer = 170;
-  setObjective(pts[0], 'Checkpoint 1/9');
-  hud.mText.textContent = 'Checkpoint 1 dari 9 — gas! Ratu Strip pakai mobil pink.';
-}
-function spawnTarget() {
-  targetCar = { mesh: makeCar(0x9b59b6), hp: 100, heading: rnd() * Math.PI * 2, speed: 0 };
-  targetCar.mesh.position.set(-60, 0, 60); scene.add(targetCar.mesh);
-  hud.mText.textContent = 'Kejar mobil ungu itu — tabrak sampai hancur! (HP target tampil di penanda)';
-  setObjective(targetCar.mesh.position, 'Target kurir rival', 10);
+
+// Balapan pantai: 9 checkpoint mengelilingi lingkar pantai
+const RACE_POINTS = [
+  [176, 120], [176, 0], [176, -120], [90, -176], [-30, -176],
+  [-150, -176], [-176, -60], [-176, 70], [-90, 176],
+];
+let race = null; // {idx, rivalProg, rivalCar}
+let rival = null; // kurir rival misi 4 {car, hp}
+const MISSIONS = [
+  { title: 'MISI 1 — PAKET DARI PELABUHAN', district: 'port', pay: 300, rp: 120, pts: 2,
+    text: 'Ambil paket misterius di dermaga Pelabuhan Sagara (penanda kuning). Jangan rusak mobilmu di kontainer!',
+    done: 'Paket di tangan. Bang Jaka tersenyum.',
+    start() { setObjective(portPos, 'Ambil paket di pelabuhan'); },
+    arrive() { completeMission(); } },
+  { title: 'MISI 2 — ANTAR KE VICE STRIP', district: 'vice', pay: 450, rp: 160, pts: 2,
+    text: 'Antar paket ke klub Vice Strip sebelum timer 90 detik habis. Polisi mulai curiga — bintang 1!',
+    done: 'Paket terkirim. Klub menyala untukmu.',
+    start() { setObjective(clubPos, 'Antar paket ke klub Vice Strip'); missionTimer = 90; addWanted(1, true); },
+    arrive() { missionTimer = null; completeMission(); } },
+  { title: 'MISI 3 — BALAPAN PANTAI LIAR', district: 'vice', pay: 600, rp: 220, pts: 2,
+    text: 'Balapan jalanan 9 checkpoint keliling lingkar pantai melawan Sinta, Ratu Strip. Lewati penanda ungu satu per satu dan finis duluan!',
+    done: 'Kamu mengalahkan Ratu Strip di kandangnya!',
+    start() {
+      const rc = makeCar(0xff2e88, false, false);
+      rc.mesh.position.set(RACE_POINTS[0][0], 0, RACE_POINTS[0][1] + 8);
+      race = { idx: 0, rivalProg: 0, rivalCar: rc };
+      setObjective(new THREE.Vector3(RACE_POINTS[0][0], 0, RACE_POINTS[0][1]), 'Checkpoint 1/9');
+      showToast('🏁 Balapan dimulai! Ikuti penanda ungu.');
+    },
+    arrive() { /* ditangani logika checkpoint */ } },
+  { title: 'MISI 4 — HAJAR KURIR RIVAL', district: 'port', pay: 700, rp: 260, pts: 2,
+    text: 'Kurir rival (mobil ungu) kabur membawa rute kita. Kejar dan tabrak sampai mobilnya hancur! Bintang 2.',
+    done: 'Kurir rival tamat. Rute pelabuhan kembali ke kita.',
+    start() {
+      const rc = makeCar(0x8e44ad, false, false);
+      rc.mesh.position.set(-40, 0, -120); rc.angle = Math.PI / 2;
+      rival = { car: rc, hp: 100, flee: 0 };
+      addWanted(2, true);
+      setObjective(rc.mesh.position, 'Hajar kurir rival!');
+    },
+    arrive() { /* ditangani logika tabrakan */ } },
+  { title: 'MISI 5 — KABUR KE SAFEHOUSE', district: 'hill', pay: 900, rp: 340, pts: 3,
+    text: 'Polisi di mana-mana! Tembus ke safehouse Kru Sagara di Bukit Palma dengan bintang 3. Jangan tertangkap!',
+    done: 'Kamu aman di Bukit Palma. Legenda dimulai.',
+    start() { addWanted(3, true); setObjective(safePos, 'Kabur ke safehouse Bukit Palma'); },
+    arrive() { S.wanted = 0; S.heat = 0; clearPolice(); completeMission(); } },
+];
+
+// Free roam: pekerjaan kilat & balapan mini bergiliran
+let freeKind = 0;
+function freeRoamObjective() {
+  missionTimer = null;
+  const spots = [portPos, clubPos, safePos, sprayPos, new THREE.Vector3(0, 0, -176), new THREE.Vector3(-176, 0, 0)];
+  const target = spots[Math.floor(Math.random() * spots.length)];
+  if (freeKind % 2 === 0) {
+    hud.mTitle.textContent = 'PEKERJAAN KILAT';
+    hud.mText.textContent = 'Antar paket kilat ke penanda kuning. Bayaran $250 + 90 RP.';
+    setObjective(target, 'Antar paket kilat', () => {
+      S.money += 250; showBanner('TERKIRIM!', '+$250 • +90 RP'); jingle(true); addRP(90); refreshHUD(); freeRoamObjective();
+    });
+  } else {
+    hud.mTitle.textContent = 'BALAPAN MINI';
+    hud.mText.textContent = 'Sprint ke garis finis sebelum 45 detik. Hadiah $300 + 80 RP.';
+    missionTimer = 45;
+    setObjective(target, 'Garis finis balapan mini', () => {
+      missionTimer = null; S.money += 300; showBanner('MENANG BALAPAN!', '+$300 • +80 RP'); jingle(true); addRP(80); refreshHUD(); freeRoamObjective();
+    });
+  }
+  freeKind++;
 }
 
-// ---------- Input ----------
+// ---------------- Input ----------------
 const keys = {};
-addEventListener('keydown', e => { keys[e.code] = true; if (e.code === 'KeyF') toggleCar(); if (e.code === 'KeyR' && S.inCar) resetCar(); });
-addEventListener('keyup', e => keys[e.code] = false);
+addEventListener('keydown', e => {
+  keys[e.code] = true;
+  if (e.code === 'KeyF') toggleCar();
+  if (e.code === 'KeyR' && S.inCar) resetCar();
+  if (e.code === 'KeyM') { S.muted = !S.muted; showToast(S.muted ? '🔇 Suara mati' : '🔊 Suara nyala'); }
+  if (['ArrowUp', 'ArrowDown', 'Space'].includes(e.code)) e.preventDefault();
+});
+addEventListener('keyup', e => { keys[e.code] = false; });
 function toggleCar() {
-  if (!started || S.dead) return;
+  if (!S.started || S.over) return;
   if (S.inCar) {
-    S.inCar = false; hero.visible = true;
-    heroState.pos.set(car.position.x + 2.6, 0, car.position.z);
-    heroState.heading = carState.heading;
+    S.inCar = false;
+    foot.x = car.mesh.position.x + 3.2; foot.z = car.mesh.position.z;
+    foot.angle = car.angle;
+    walker.visible = true; carSpeed = 0;
     hud.gear.textContent = 'JALAN KAKI';
-  } else if (heroState.pos.distanceTo(car.position) < 5) {
-    S.inCar = true; hero.visible = false; hud.gear.textContent = 'DI MOBIL';
+    showToast('Kamu turun. Tekan F dekat mobil untuk naik lagi.');
+  } else {
+    const d = Math.hypot(foot.x - car.mesh.position.x, foot.z - car.mesh.position.z);
+    if (d < 6) { S.inCar = true; walker.visible = false; hud.gear.textContent = 'DI MOBIL'; }
+    else showToast('Mobil terlalu jauh — dekati mobil merahmu dulu.');
   }
 }
 function resetCar() {
-  carState.speed = 0; car.position.y = 0;
-  car.rotation.set(0, carState.heading, 0);
-  showToast('Mobil dibalikkan.');
+  car.mesh.position.y = groundHeight(car.mesh.position.x, car.mesh.position.z);
+  carSpeed = 0; showToast('Mobil dibalikkan.');
 }
+function playerPos() {
+  return S.inCar ? car.mesh.position : new THREE.Vector3(foot.x, 0, foot.z);
+}
+function playerAngle() { return S.inCar ? car.angle : foot.angle; }
 
-// ---------- Tabrakan dunia ----------
-function collideWorld(pos, radius, speedNow) {
-  for (const c of colliders) {
-    const dx = pos.x - c.x, dz = pos.z - c.z;
-    const px = c.hw + radius - Math.abs(dx), pz = c.hd + radius - Math.abs(dz);
-    if (px > 0 && pz > 0) {
-      if (px < pz) pos.x = c.x + (dx > 0 ? 1 : -1) * (c.hw + radius);
-      else pos.z = c.z + (dz > 0 ? 1 : -1) * (c.hd + radius);
-      if (Math.abs(speedNow) > 9) { damage(2.5); commitCrime(0.35); }
-      return true;
-    }
-  }
-  const distC = Math.hypot(pos.x, pos.z);
-  if (distC > 188) { pos.x *= 188 / distC; pos.z *= 188 / distC; return true; }
-  return false;
-}
-function carHitOther(otherPos, radius = 3.1) {
-  const d = Math.hypot(car.position.x - otherPos.x, car.position.z - otherPos.z);
-  return d < radius + 1.6;
-}
-
-// ---------- Update mobil pemain ----------
-const camPos = new THREE.Vector3(0, 6, 12);
-function updatePlayerCar(dt) {
-  const accel = 26, topSpeed = keys.ShiftLeft || keys.ShiftRight ? 52 : 42;
-  if (keys.KeyW) carState.speed += accel * dt * (carState.speed < 0 ? 2.2 : 1);
-  else if (keys.KeyS) carState.speed -= (carState.speed > 1 ? 34 : 13) * dt;
-  else carState.speed -= carState.speed * 0.55 * dt;
-  if (keys.Space) carState.speed -= carState.speed * 2.4 * dt;
-  carState.speed = THREE.MathUtils.clamp(carState.speed, -13, topSpeed);
-  if (Math.abs(carState.speed) < 0.12 && !keys.KeyW && !keys.KeyS) carState.speed = 0;
-  const steerTarget = (keys.KeyA ? 1 : 0) - (keys.KeyD ? 1 : 0);
-  carState.steer += (steerTarget * 0.55 - carState.steer) * Math.min(1, dt * 8);
-  if (Math.abs(carState.speed) > 0.4) {
-    const grip = keys.Space ? 1.65 : 1;
-    carState.heading += carState.steer * grip * dt * (carState.speed / 13) * (carState.speed >= 0 ? 1 : -1) * 0.62;
-  }
-  const nx = car.position.x - Math.sin(carState.heading) * carState.speed * dt;
-  const nz = car.position.z - Math.cos(carState.heading) * carState.speed * dt;
-  const oldX = car.position.x, oldZ = car.position.z;
-  car.position.x = nx; car.position.z = nz;
-  if (collideWorld(car.position, 1.7, carState.speed)) carState.speed *= -0.32;
-  // Tabrakan dengan mobil lain
-  const hitCheck = (other, onHit) => {
-    if (carHitOther(other.mesh.position)) {
-      const impact = Math.abs(carState.speed);
-      if (impact > 4) { onHit(impact); carState.speed *= 0.45; }
-      other.mesh.position.x += (other.mesh.position.x - car.position.x) * 0.12;
-      other.mesh.position.z += (other.mesh.position.z - car.position.z) * 0.12;
-    }
-  };
-  traffic.forEach(t => hitCheck(t, imp => { t.hp -= imp * 1.6; damage(imp * 0.22); commitCrime(0.6);
-    if (t.hp <= 0) { t.hp = 30; t.speed = 3; showToast('💥 Mobil warga hancur!'); } }));
-  parked.forEach(p => { if (p.hitCooldown > 0) p.hitCooldown -= dt; hitCheck(p, imp => { if (p.hitCooldown <= 0) { commitCrime(0.5); damage(imp * 0.15); p.hitCooldown = 1.2; } }); });
-  if (targetCar) hitCheck(targetCar, imp => { targetCar.hp -= imp * 2.4; damage(imp * 0.12); commitCrime(0.4);
-    showToast(`🎯 HP mobil rival: ${Math.max(0, Math.ceil(targetCar.hp))}`);
-    if (targetCar.hp <= 0) { scene.remove(targetCar.mesh); const tc = targetCar; targetCar = null; clearObjective();
-      reward(650, 200, 'port', 2, 'KURIR RIVAL HANCUR! +$650'); startMission(4); } });
-  car.position.y = 0;
-  car.rotation.set(0, carState.heading, THREE.MathUtils.clamp(-carState.steer * Math.min(6, Math.abs(carState.speed)) * 0.006, -0.06, 0.06));
-  car.userData.wheels.forEach(w => { w.rotation.x -= carState.speed * dt * 2.2; });
-  S.speed = carState.speed;
-  // Kamera kejar
-  const back = new THREE.Vector3(Math.sin(carState.heading) * 11.5, 5.2, Math.cos(carState.heading) * 11.5);
-  camPos.lerp(new THREE.Vector3(car.position.x + back.x, back.y, car.position.z + back.z), 1 - Math.pow(0.0001, dt));
-  camera.position.copy(camPos);
-  camera.lookAt(car.position.x, 1.6, car.position.z);
-  hud.speed.textContent = Math.round(Math.abs(carState.speed) * 3.6);
-  hud.gear.textContent = carState.speed < -0.5 ? 'MUNDUR (R)' : 'DI MOBIL • ' + (Math.abs(carState.speed) > 30 ? 'NITRO!' : 'NORMAL');
-}
-// ---------- Update jalan kaki ----------
-function updateHero(dt) {
-  const run = keys.ShiftLeft || keys.ShiftRight;
-  const spd = run ? 10.5 : 5.6;
-  let mx = 0, mz = 0;
-  if (keys.KeyW) mz += 1; if (keys.KeyS) mz -= 1;
-  if (keys.KeyA) mx += 1; if (keys.KeyD) mx -= 1;
-  if (mx || mz) {
-    heroState.heading = Math.atan2(mx, mz) + carState.heading * 0 + heroState.heading * 0; // arah bebas
-    heroState.heading = Math.atan2(mx, mz);
-    heroState.pos.x += Math.sin(heroState.heading) * spd * dt;
-    heroState.pos.z += Math.cos(heroState.heading) * spd * dt;
-    collideWorld(heroState.pos, 0.55, 0);
-  }
-  hero.position.copy(heroState.pos);
-  hero.rotation.y = heroState.heading;
-  const bob = (mx || mz) ? Math.sin(performance.now() * 0.02) * 0.05 : 0;
-  hero.position.y = Math.abs(bob);
-  const back = new THREE.Vector3(-Math.sin(heroState.heading) * 8, 4.4, -Math.cos(heroState.heading) * 8);
-  camPos.lerp(new THREE.Vector3(heroState.pos.x + back.x, back.y, heroState.pos.z + back.z), 1 - Math.pow(0.0001, dt));
-  camera.position.copy(camPos);
-  camera.lookAt(heroState.pos.x, 1.5, heroState.pos.z);
-  hud.speed.textContent = (mx || mz) ? Math.round(spd * 3.6 / 3) : 0;
-  S.speed = 0;
-}
-// ---------- Update lalu lintas ----------
-function updateTraffic(dt) {
-  traffic.forEach(t => {
-    if (t.hp <= 12) t.speed = Math.max(2.5, t.speed - dt * 2);
-    const nearPlayer = t.mesh.position.distanceTo(car.position) < 9;
-    const v = nearPlayer ? t.speed * 0.25 : t.speed;
-    if (t.vertical) {
-      t.mesh.position.z += t.dir * v * dt;
-      if (t.mesh.position.z > 158) t.mesh.position.z = -158;
-      if (t.mesh.position.z < -158) t.mesh.position.z = 158;
-    } else {
-      t.mesh.position.x += t.dir * v * dt;
-      if (t.mesh.position.x > 158) t.mesh.position.x = -158;
-      if (t.mesh.position.x < -158) t.mesh.position.x = 158;
-    }
-    t.mesh.userData.wheels.forEach(w => w.rotation.x -= v * dt * 2);
-  });
-  // Mobil target misi 4: kabur dari pemain
-  if (targetCar) {
-    const tp = targetCar.mesh.position;
-    const away = Math.atan2(tp.x - car.position.x, tp.z - car.position.z);
-    targetCar.heading += ((away - targetCar.heading + Math.PI * 3) % (Math.PI * 2) - Math.PI) * dt * 1.6;
-    targetCar.speed = Math.min(30, targetCar.speed + 20 * dt);
-    tp.x += Math.sin(targetCar.heading) * targetCar.speed * dt;
-    tp.z += Math.cos(targetCar.heading) * targetCar.speed * dt;
-    if (Math.hypot(tp.x, tp.z) > 165) targetCar.heading += Math.PI * dt * 2;
-    collideWorld(tp, 1.7, 0);
-    targetCar.mesh.rotation.y = targetCar.heading;
-    if (objective) { objective.pos.copy(tp); beacon.position.set(tp.x, 15, tp.z); beaconRing.position.set(tp.x, 0.12, tp.z); }
-  }
-  // Rival balapan misi 3
-  if (race) {
-    const r = race.rival, pts = race.points;
-    const goal = pts[r.idx];
-    if (goal) {
-      const dx = goal.x - r.mesh.position.x, dz = goal.z - r.mesh.position.z;
-      const dist = Math.hypot(dx, dz);
-      const h = Math.atan2(dx, dz);
-      r.mesh.rotation.y = h;
-      r.speed = Math.min(33, r.speed + 16 * dt);
-      r.mesh.position.x += Math.sin(h) * r.speed * dt;
-      r.mesh.position.z += Math.cos(h) * r.speed * dt;
-      if (dist < 9) { r.idx++; if (r.idx >= pts.length) { failMission('Ratu Strip finis duluan!'); } }
-    }
-  }
-}
-// ---------- Update polisi ----------
-let policeSpawnT = 0, calmT = 0;
-function updatePolice(dt, tNow) {
-  const wantCount = S.wanted;
-  policeSpawnT -= dt;
-  if (police.length < wantCount && policeSpawnT <= 0) { spawnPolice(); policeSpawnT = 2.5; }
-  if (police.length > wantCount) { const p = police.pop(); scene.remove(p.mesh); }
-  let nearest = 999;
-  police.forEach((p, i) => {
-    const tp = S.inCar ? car.position : heroState.pos;
-    const dx = tp.x - p.mesh.position.x, dz = tp.z - p.mesh.position.z;
-    const dist = Math.hypot(dx, dz); nearest = Math.min(nearest, dist);
-    const h = Math.atan2(dx, dz);
-    let dh = (h - p.heading + Math.PI * 3) % (Math.PI * 2) - Math.PI;
-    p.heading += THREE.MathUtils.clamp(dh, -1.7 * dt, 1.7 * dt);
-    const topP = 30 + S.wanted * 1.6;
-    p.speed = THREE.MathUtils.clamp(p.speed + (dist > 7 ? 26 : -14) * dt, 4, topP);
-    p.mesh.position.x += Math.sin(p.heading) * p.speed * dt;
-    p.mesh.position.z += Math.cos(p.heading) * p.speed * dt;
-    collideWorld(p.mesh.position, 1.7, 0);
-    p.mesh.rotation.y = p.heading;
-    p.mesh.userData.wheels.forEach(w => w.rotation.x -= p.speed * dt * 2);
-    const flash = Math.sin(tNow * 10 + i) > 0;
-    p.mesh.userData.lightR.material.color.setHex(flash ? 0xff2222 : 0x551111);
-    p.mesh.userData.lightB.material.color.setHex(flash ? 0x112255 : 0x2266ff);
-    // Tabrakan polisi dengan pemain
-    if (S.inCar && carHitOther(p.mesh.position, 2.6) && Math.abs(carState.speed) > 3) {
-      damage(Math.abs(carState.speed) * 0.14); carState.speed *= 0.82;
-    }
-  });
-  // Meteran tertangkap
-  const playerSpeed = S.inCar ? Math.abs(carState.speed) : 0;
-  if (S.wanted > 0 && nearest < 8 && playerSpeed < 2.2) {
-    S.bust += dt / 3.2;
-    hud.bustWrap.style.display = 'block'; hud.bustBar.style.width = (S.bust * 100) + '%';
-    if (S.bust >= 1) endGame(true);
-  } else {
-    S.bust = Math.max(0, S.bust - dt * 0.7);
-    hud.bustWrap.style.display = S.bust > 0.05 ? 'block' : 'none';
-    hud.bustBar.style.width = (S.bust * 100) + '%';
-  }
-  // Tenang = bintang turun perlahan
-  if (S.wanted > 0 && nearest > 55) { calmT += dt; if (calmT > 9) { S.wanted--; calmT = 0; showToast('Polisi kehilangan jejak… bintang turun.'); refreshHUD(); } }
-  else calmT = 0;
-  S.wantedTimer += dt;
-}
-// ---------- Pay 'n Spray ----------
-function updateSpray(dt) {
-  sprayCooldown.t -= dt;
-  const inSpray = S.inCar && car.position.distanceTo(new THREE.Vector3(sprayPos.x - 8, 0, sprayPos.z)) < 7.5;
-  if (inSpray && sprayCooldown.t <= 0) {
-    if (S.money >= 150) {
-      S.money -= 150; S.health = 100; S.armour = Math.max(S.armour, 60);
-      S.wanted = 0; heat = 0; clearPolice();
-      showBanner("PAY 'N SPRAY", 'Mobil mulus lagi, catatan bersih. -$150');
-      sprayCooldown.t = 6; refreshHUD();
-    } else if (sprayCooldown.t <= -3) { showToast('Uang kurang — Pay \'n Spray butuh $150.'); sprayCooldown.t = 3; }
-  }
-}
-// ---------- Objektif & timer misi ----------
-function updateObjective(dt) {
-  if (!objective) { hud.mDist.textContent = ''; return; }
-  const p = S.inCar ? car.position : heroState.pos;
-  const d = Math.hypot(p.x - objective.pos.x, p.z - objective.pos.z);
-  hud.mDist.textContent = `🎯 ${objective.label} — ${Math.round(d)} m`;
-  beacon.material.opacity = 0.28 + Math.sin(performance.now() * 0.005) * 0.12;
-  beaconRing.rotation.z += dt;
-  if (d < objective.radius) {
-    if (S.freeRoam && objective.onArrive) { const f = objective.onArrive; clearObjective(); f(); }
-    else if (!S.freeRoam) MISSIONS[S.missionIndex].arrive();
-  }
-  // Race checkpoints
-  if (race && objective) { /* ditangani di bawah lewat jarak */ }
-  if (race) {
-    const pts = race.points, cp = pts[race.idx];
-    if (cp && Math.hypot(p.x - cp.x, p.z - cp.z) < 11) {
-      race.idx++;
-      if (race.idx >= pts.length) {
-        scene.remove(race.rival.mesh); race = null; missionTimer = null; clearObjective();
-        reward(550, 180, 'vice', 2, 'JUARA BALAPAN PANTAI! +$550'); startMission(3);
-      } else { setObjective(pts[race.idx], `Checkpoint ${race.idx + 1}/9`); showToast(`✔ Checkpoint ${race.idx}/9`); }
-    }
-  }
-  if (missionTimer !== null) {
-    missionTimer -= dt;
-    hud.mDist.textContent += ` • ⏱ ${Math.max(0, Math.ceil(missionTimer))} dtk`;
-    if (missionTimer <= 0) { missionTimer = null; failMission('Waktu habis!'); }
-  }
-}
-// ---------- Minimap ----------
-const mm = el('minimap').getContext('2d');
-function drawMinimap(tNow) {
-  const W = 188, scale = W / 400;
-  mm.fillStyle = '#1283a8'; mm.fillRect(0, 0, W, W);
-  mm.fillStyle = '#e8c98a'; mm.beginPath(); mm.arc(W/2, W/2, 196 * scale, 0, 7); mm.fill();
-  mm.fillStyle = '#3f9e57'; mm.fillRect(W/2 - 170 * scale, W/2 - 170 * scale, 340 * scale, 340 * scale);
-  mm.strokeStyle = '#3a3f4a'; mm.lineWidth = 5;
-  ROAD_POS.forEach(p => { mm.beginPath(); mm.moveTo(W/2 + p * scale, W/2 - 168 * scale); mm.lineTo(W/2 + p * scale, W/2 + 168 * scale); mm.stroke();
-    mm.beginPath(); mm.moveTo(W/2 - 168 * scale, W/2 + p * scale); mm.lineTo(W/2 + 168 * scale, W/2 + p * scale); mm.stroke(); });
-  const px = v => W/2 + v * scale;
-  if (objective) { mm.fillStyle = '#ffd83d'; mm.beginPath(); mm.arc(px(objective.pos.x), px(objective.pos.z), 5.5, 0, 7); mm.fill();
-    mm.strokeStyle = '#fff'; mm.lineWidth = 1.5; mm.stroke(); }
-  traffic.forEach(t => { mm.fillStyle = '#ffffff'; mm.fillRect(px(t.mesh.position.x) - 1.5, px(t.mesh.position.z) - 1.5, 3, 3); });
-  police.forEach((p, i) => { mm.fillStyle = Math.sin(tNow * 10 + i) > 0 ? '#ff2222' : '#2266ff';
-    mm.beginPath(); mm.arc(px(p.mesh.position.x), px(p.mesh.position.z), 3.6, 0, 7); mm.fill(); });
-  if (targetCar) { mm.fillStyle = '#d26bff'; mm.beginPath(); mm.arc(px(targetCar.mesh.position.x), px(targetCar.mesh.position.z), 4.5, 0, 7); mm.fill(); }
-  // Pemain: panah putih
-  const p = S.inCar ? car.position : heroState.pos;
-  const h = S.inCar ? carState.heading : heroState.heading;
-  mm.save(); mm.translate(px(p.x), px(p.z)); mm.rotate(-h);
-  mm.fillStyle = '#ffffff'; mm.beginPath(); mm.moveTo(0, -7); mm.lineTo(4.6, 5); mm.lineTo(-4.6, 5); mm.closePath(); mm.fill();
-  mm.strokeStyle = '#111'; mm.lineWidth = 1; mm.stroke(); mm.restore();
-  const dirs = ['U', 'TL', 'T', 'TG', 'S', 'BD', 'B', 'BL'];
-  const idx = ((Math.round((-h) / (Math.PI / 4)) % 8) + 8) % 8;
-  hud.compass.textContent = dirs[idx];
-}
-// ---------- Akhir permainan ----------
-function endGame(busted) {
-  if (S.dead) return; S.dead = true;
-  el('endTitle').textContent = busted ? '🚔 BUSTED!' : '💀 WASTED!';
+// ---------------- Game over / respawn ----------------
+function gameOver(busted) {
+  S.over = true; jingle(false);
+  el('endTitle').textContent = busted ? 'BUSTED' : 'WASTED';
   el('endTitle').style.color = busted ? '#54a0ff' : '#ff4757';
   el('endText').textContent = busted
-    ? 'Polisi Sagara menangkapmu. Kru membayar jaminan, tapi $200 melayang dan namamu sedikit tercoreng.'
+    ? 'Polisi Sagara menangkapmu. Kru membayar jaminan, tapi $200 melayang dan bintangmu dibersihkan.'
     : 'Kamu terkapar di jalanan Sagara. Kru membawamu pulang — biaya perawatan $200.';
   el('endScreen').style.display = 'flex';
 }
-el('retryBtn').addEventListener('click', () => {
-  S.money = Math.max(0, S.money - 200); S.health = 100; S.armour = 50;
-  S.wanted = 0; heat = 0; S.bust = 0; S.dead = false; clearPolice();
-  car.position.set(10, 0, 26); carState.heading = Math.PI; carState.speed = 0;
-  if (!S.inCar) toggleCarForce();
+function respawn() {
+  S.money = Math.max(0, S.money - 200);
+  S.health = 100; S.armour = 50; S.wanted = 0; S.heat = 0; S.bust = 0;
+  clearPolice(); carHealth = 100;
+  car.mesh.position.set(0, 0, 96); car.angle = Math.PI; carSpeed = 0;
+  S.inCar = true; walker.visible = false; S.over = false;
   el('endScreen').style.display = 'none';
   if (!S.freeRoam) startMission(S.missionIndex); else freeRoamObjective();
   refreshHUD();
-});
-function toggleCarForce() { S.inCar = true; hero.visible = false; }
-
-// ---------- Loop utama ----------
-let started = false;
-const clock = new THREE.Clock();
-function animate() {
-  requestAnimationFrame(animate);
-  const dt = Math.min(clock.getDelta(), 0.05);
-  const tNow = clock.elapsedTime;
-  ocean.position.y = -0.7 + Math.sin(tNow * 0.7) * 0.08;
-  fountain.rotation.y += dt * 0.8;
-  clubSign.material.color.setHSL(0.92, 1, 0.45 + Math.sin(tNow * 4) * 0.18);
-  if (started && !S.dead) {
-    if (S.inCar) updatePlayerCar(dt); else updateHero(dt);
-    updateTraffic(dt); updatePolice(dt, tNow); updateSpray(dt); updateObjective(dt);
-    if ((animate.frame = (animate.frame || 0) + 1) % 6 === 0) refreshHUD();
-  }
-  drawMinimap(tNow);
-  renderer.render(scene, camera);
 }
-animate();
-refreshHUD();
-hud.mTitle.textContent = 'SAGARA HEAT — ISLE OF VICE';
-hud.mText.textContent = 'Tekan MULAI MESIN, lalu ikuti penanda kuning. Misi 1 menunggumu di pelabuhan.';
-
-// ---------- Mulai ----------
+el('retryBtn').addEventListener('click', respawn);
 el('startBtn').addEventListener('click', () => {
   el('startScreen').style.display = 'none';
-  started = true; S.inCar = true; hero.visible = false;
-  showBanner('SAGARA HEAT', 'Isle of Vice — bangun namamu, bos jalanan!');
-  startMission(0);
+  S.started = true; initAudio();
+  if (AC && AC.state === 'suspended') AC.resume();
+  startMission(0); refreshHUD();
+  showBanner('SELAMAT DATANG DI SAGARA', 'Ambil paket pertama di Pelabuhan Sagara.');
 });
+
+// ---------------- Update: mobil pemain ----------------
+let sprayCooldown = 0, crashCooldown = 0, policeSpawnT = 0;
+function updateCar(dt) {
+  const fwd = (keys.KeyW || keys.ArrowUp) ? 1 : 0, back = (keys.KeyS || keys.ArrowDown) ? 1 : 0;
+  const nitro = (keys.ShiftLeft || keys.ShiftRight) ? 1 : 0;
+  const maxF = nitro ? 46 : 34, accel = nitro ? 26 : 19;
+  if (fwd) carSpeed += accel * dt;
+  else if (back) carSpeed -= 15 * dt;
+  else carSpeed -= carSpeed * 1.4 * dt;                    // gesekan
+  if (keys.Space) carSpeed -= carSpeed * 2.6 * dt;         // rem tangan
+  carSpeed = Math.max(-13, Math.min(maxF, carSpeed));
+  const steerIn = (keys.KeyA || keys.ArrowLeft ? 1 : 0) - (keys.KeyD || keys.ArrowRight ? 1 : 0);
+  if (Math.abs(carSpeed) > 0.4) {
+    const drift = keys.Space ? 1.9 : 1.0;
+    car.angle += steerIn * dt * 1.55 * drift * Math.sign(carSpeed) * Math.min(1, Math.abs(carSpeed) / 9);
+  }
+  const p = car.mesh.position;
+  const nx = p.x - Math.sin(car.angle) * carSpeed * dt;
+  const nz = p.z - Math.cos(car.angle) * carSpeed * dt;
+  const res = collide(nx, nz, 2.1);
+  if (res.hit && Math.abs(carSpeed) > 11 && crashCooldown <= 0) {
+    carHealth -= 9; damagePlayer(3); addHeat(0.34);
+    showToast('💥 Tabrakan! Mobil rusak: ' + Math.max(0, Math.ceil(carHealth)) + '%');
+    beep(90, .18, 'sawtooth', .08); crashCooldown = 0.7;
+    carSpeed *= -0.25;
+  } else if (res.hit) carSpeed *= 0.6;
+  p.x = res.x; p.z = res.z;
+  p.y = groundHeight(p.x, p.z);
+  car.mesh.rotation.y = car.angle;
+  car.mesh.rotation.z = steerIn * -0.03 * Math.min(1, Math.abs(carSpeed) / 20);
+  for (const w of car.wheels) w.rotation.x += carSpeed * dt * 2.2;
+  hud.speed.textContent = Math.round(Math.abs(carSpeed) * 3);
+  hud.gear.textContent = carSpeed < -0.5 ? 'MUNDUR (R)' : (nitro && fwd ? 'NITRO 🔥' : 'DI MOBIL');
+  if (carHealth <= 0) { carHealth = 0; damagePlayer(30 * dt + 1); showToast('Mobilmu hancur! Turun (F) dan menjauh!'); }
+}
+function addHeat(n) {
+  S.heat = Math.min(5, S.heat + n);
+  const target = Math.floor(S.heat);
+  if (target > S.wanted) addWanted(target - S.wanted, true);
+}
+// ---------------- Update: jalan kaki ----------------
+function updateFoot(dt) {
+  const run = (keys.ShiftLeft || keys.ShiftRight) ? 9.5 : 5.2;
+  let mx = 0, mz = 0;
+  if (keys.KeyW || keys.ArrowUp) mz -= 1;
+  if (keys.KeyS || keys.ArrowDown) mz += 1;
+  if (keys.KeyA || keys.ArrowLeft) mx -= 1;
+  if (keys.KeyD || keys.ArrowRight) mx += 1;
+  if (mx || mz) {
+    // gerak mengikuti input dunia; karakter menghadap arah jalannya
+    const res = collide(foot.x + mx * run * dt, foot.z + mz * run * dt, 0.8);
+    foot.x = res.x; foot.z = res.z;
+    foot.angle = Math.atan2(-mx, -mz);
+    foot.bob += dt * (run > 6 ? 11 : 8);
+  }
+  walker.position.set(foot.x, groundHeight(foot.x, foot.z) + Math.abs(Math.sin(foot.bob)) * 0.12, foot.z);
+  walker.rotation.y = foot.angle;
+  hud.speed.textContent = (mx || mz) ? Math.round(run) : 0;
+  hud.gear.textContent = 'JALAN KAKI';
+}
+// ---------------- Update: lalu lintas & pejalan kaki ----------------
+function updateTraffic(dt, t) {
+  const pp = playerPos();
+  for (const tr of traffic) {
+    let sp = tr.cruise;
+    const d = Math.hypot(tr.mesh.position.x - pp.x, tr.mesh.position.z - pp.z);
+    if (d < 10) sp = 2;
+    tr.pos += tr.lane.dir * sp * dt;
+    if (tr.pos > 196) tr.pos = -196; if (tr.pos < -196) tr.pos = 196;
+    placeTraffic(tr);
+    // tabrakan dengan pemain di mobil
+    if (S.inCar && d < 3.6 && crashCooldown <= 0) {
+      carHealth -= 7; damagePlayer(4); addHeat(0.5);
+      carSpeed *= -0.3; crashCooldown = 0.8;
+      showToast('💥 Menabrak lalu lintas! Polisi memperhatikanmu.');
+      beep(90, .18, 'sawtooth', .08);
+    }
+  }
+  for (const pd of peds) {
+    pd.pos += pd.dir * pd.speed * dt;
+    if (pd.pos > 190) pd.dir = -1; if (pd.pos < -190) pd.dir = 1;
+    pd.bob += dt * 6;
+    if (pd.horiz) { pd.mesh.position.set(pd.pos, Math.abs(Math.sin(pd.bob)) * 0.06, pd.fixed); pd.mesh.rotation.y = pd.dir > 0 ? Math.PI / 2 : -Math.PI / 2; }
+    else { pd.mesh.position.set(pd.fixed, Math.abs(Math.sin(pd.bob)) * 0.06, pd.pos); pd.mesh.rotation.y = pd.dir > 0 ? 0 : Math.PI; }
+  }
+}
+// ---------------- Update: polisi ----------------
+function updatePolice(dt, t) {
+  policeSpawnT -= dt;
+  const want = S.wanted;
+  if (want > 0 && police.length < want && policeSpawnT <= 0) { spawnPolice(); policeSpawnT = 1.6; }
+  if (want === 0 && police.length) clearPolice();
+  const pp = playerPos();
+  let nearest = 1e9;
+  for (let i = police.length - 1; i >= 0; i--) {
+    const p = police[i], m = p.mesh.position;
+    const dx = pp.x - m.x, dz = pp.z - m.z, dist = Math.hypot(dx, dz);
+    nearest = Math.min(nearest, dist);
+    if (dist > 240) { scene.remove(p.mesh); police.splice(i, 1); continue; }
+    const targetAngle = Math.atan2(-dx, -dz);
+    let diff = targetAngle - p.angle;
+    while (diff > Math.PI) diff -= Math.PI * 2;
+    while (diff < -Math.PI) diff += Math.PI * 2;
+    p.angle += Math.max(-2.2 * dt, Math.min(2.2 * dt, diff));
+    const topSpeed = 27 + want * 2.6;
+    p.speed = Math.min(topSpeed, p.speed + 22 * dt);
+    if (dist < 9) p.speed = Math.min(p.speed, Math.max(6, Math.abs(carSpeed) * 0.7));
+    const res = collide(m.x - Math.sin(p.angle) * p.speed * dt, m.z - Math.cos(p.angle) * p.speed * dt, 2.0);
+    m.x = res.x; m.z = res.z; m.y = groundHeight(m.x, m.z);
+    p.mesh.rotation.y = p.angle;
+    for (const w of p.wheels) w.rotation.x += p.speed * dt * 2.2;
+    const blink = Math.sin(t * 11) > 0;
+    if (p.lightRed) { p.lightRed.material.color.setHex(blink ? 0xff2222 : 0x551111); p.lightBlue.material.color.setHex(blink ? 0x112255 : 0x3388ff); }
+    // tabrakan polisi <-> pemain
+    if (dist < 3.4 && crashCooldown <= 0) {
+      if (S.inCar) { carHealth -= 5; carSpeed *= 0.55; }
+      damagePlayer(2); crashCooldown = 0.6; beep(100, .15, 'sawtooth', .07);
+    }
+  }
+  // meteran tertangkap: polisi dekat & pemain lambat
+  const mySpeed = S.inCar ? Math.abs(carSpeed) : 4;
+  if (want > 0 && nearest < 11 && mySpeed < 6) S.bust += dt * 26;
+  else S.bust = Math.max(0, S.bust - dt * 30);
+  hud.bustWrap.style.display = S.bust > 4 ? 'block' : 'none';
+  hud.bustBar.style.width = Math.min(100, S.bust) + '%';
+  if (S.bust >= 100 && !S.over) gameOver(true);
+  // bintang turun bila lolos dari pandangan
+  if (want > 0 && nearest > 60) {
+    S.loseTimer += dt;
+    if (S.loseTimer > 6) { S.loseTimer = 0; S.heat = Math.max(0, S.wanted - 1); addWanted(-1, true); showToast('Kamu menghilang dari kejaran — bintang turun.'); }
+  } else S.loseTimer = 0;
+  // audio sirene
+  if (sirenGain) sirenGain.gain.value = (!S.muted && want > 0 && nearest < 90) ? 0.018 : 0.0;
+  if (sirenOsc) sirenOsc.frequency.value = 650 + Math.sin(t * 6) * 220;
+}
+// ---------------- Update: balapan & kurir rival ----------------
+function steerCarAlong(c, tx, tz, speed, dt) {
+  const m = c.mesh.position;
+  const dx = tx - m.x, dz = tz - m.z, dist = Math.hypot(dx, dz);
+  const targetAngle = Math.atan2(-dx, -dz);
+  let diff = targetAngle - c.angle;
+  while (diff > Math.PI) diff -= Math.PI * 2;
+  while (diff < -Math.PI) diff += Math.PI * 2;
+  c.angle += Math.max(-2.4 * dt, Math.min(2.4 * dt, diff));
+  c.speed = speed;
+  const res = collide(m.x - Math.sin(c.angle) * speed * dt, m.z - Math.cos(c.angle) * speed * dt, 2.0);
+  m.x = res.x; m.z = res.z; m.y = groundHeight(m.x, m.z);
+  c.mesh.rotation.y = c.angle;
+  for (const w of c.wheels) w.rotation.x += speed * dt * 2.2;
+  return dist;
+}
+function updateRaceRival(dt) {
+  if (race) {
+    const [tx, tz] = RACE_POINTS[Math.min(race.rivalProg, RACE_POINTS.length - 1)];
+    const d = steerCarAlong(race.rivalCar, tx, tz, 25.5, dt);
+    if (d < 9 && race.rivalProg < RACE_POINTS.length) race.rivalProg++;
+    if (race.rivalProg >= RACE_POINTS.length && race.idx < RACE_POINTS.length) {
+      scene.remove(race.rivalCar.mesh); race = null;
+      failMission('Sinta finis duluan!');
+    }
+  }
+  if (rival) {
+    const pp = playerPos();
+    // kurir kabur menjauhi pemain, menyusuri arah jalan terdekat (sumbu dominan)
+    const m = rival.car.mesh.position;
+    let ax = m.x - pp.x, az = m.z - pp.z;
+    if (Math.abs(ax) > Math.abs(az)) az = 0; else ax = 0;
+    const d = steerCarAlong(rival.car, m.x + ax * 3, m.z + az * 3, 21, dt);
+    rival.flee += dt;
+    setObjective(rival.car.mesh.position.clone(), 'Hajar kurir rival! HP ' + Math.max(0, Math.ceil(rival.hp)) + '%');
+    marker.position.y = 0;
+    const dist = Math.hypot(pp.x - m.x, pp.z - m.z);
+    if (S.inCar && dist < 3.8 && crashCooldown <= 0) {
+      rival.hp -= 14 + Math.abs(carSpeed) * 0.7;
+      carHealth -= 4; carSpeed *= 0.6; crashCooldown = 0.55;
+      showToast('💥 Kurir rival HP: ' + Math.max(0, Math.ceil(rival.hp)) + '%');
+      beep(110, .15, 'sawtooth', .08);
+      if (rival.hp <= 0) {
+        scene.remove(rival.car.mesh); rival = null; clearObjective();
+        completeMission();
+      }
+    }
+  }
+}
+// ---------------- Update: objektif, permata, Pay 'n Spray, timer ----------------
+function updateObjectives(dt) {
+  const pp = playerPos();
+  // permata
+  for (const g of gems) {
+    if (!g.visible) continue;
+    g.rotation.y += dt * 2.4;
+    g.position.y = groundHeight(g.position.x, g.position.z) + 1.6 + Math.sin(performance.now() * 0.003 + g.position.x) * 0.3;
+    if (Math.hypot(pp.x - g.position.x, pp.z - g.position.z) < 3.6) {
+      g.visible = false; S.gems++; S.money += 75;
+      showToast('💎 Permata Sagara ' + S.gems + '/15 • +$75 • +20 RP');
+      beep(1180, .12, 'sine', .07); beep(1560, .18, 'sine', .07, .09);
+      addRP(20); refreshHUD();
+      if (S.gems === 15) showBanner('SEMUA PERMATA TERKUMPUL!', 'Kamu pemburu harta sejati Sagara. 💎');
+    }
+  }
+  // Pay 'n Spray
+  sprayCooldown -= dt;
+  if (S.inCar && Math.hypot(pp.x - sprayMarker.position.x, pp.z - sprayMarker.position.z) < 7.5) {
+    if (sprayCooldown <= 0) {
+      if (S.money >= 150 && (carHealth < 100 || S.wanted > 0 || S.armour < 100)) {
+        S.money -= 150; carHealth = 100; S.armour = 100;
+        S.wanted = 0; S.heat = 0; S.bust = 0; clearPolice();
+        showBanner("PAY 'N SPRAY", 'Mobil mulus, armour penuh, bintang bersih. -$150');
+        jingle(true); sprayCooldown = 5; refreshHUD();
+      } else if (S.money < 150 && sprayCooldown < -3) { showToast("Uang kurang — Pay 'n Spray butuh $150."); sprayCooldown = 3; }
+    }
+  }
+  if (race) {
+    // checkpoint balapan
+    const [cx, cz] = RACE_POINTS[race.idx];
+    marker.position.set(cx, 0, cz);
+    marker.children[0].material.color.setHex(0xd24dff); marker.children[1].material.color.setHex(0xd24dff);
+    if (Math.hypot(pp.x - cx, pp.z - cz) < 11) {
+      race.idx++; beep(880, .12, 'square', .07);
+      if (race.idx >= RACE_POINTS.length) {
+        scene.remove(race.rivalCar.mesh); race = null; clearObjective();
+        marker.children[0].material.color.setHex(0xffd83d); marker.children[1].material.color.setHex(0xffd83d);
+        completeMission();
+      } else {
+        setObjective(new THREE.Vector3(RACE_POINTS[race.idx][0], 0, RACE_POINTS[race.idx][1]), 'Checkpoint ' + (race.idx + 1) + '/9');
+        showToast('✔ Checkpoint ' + race.idx + '/9 — Sinta di ' + race.rivalProg + '/9');
+      }
+    }
+  } else if (rival) {
+    // objektif mengikuti kurir — ditangani di updateRaceRival
+  } else if (objective) {
+    marker.children[0].material.color.setHex(0xffd83d); marker.children[1].material.color.setHex(0xffd83d);
+    const d = Math.hypot(pp.x - objective.pos.x, pp.z - objective.pos.z);
+    hud.mDist.textContent = '🎯 ' + objective.label + ' — ' + Math.round(d) + ' m' +
+      (missionTimer !== null ? ' • ⏱ ' + Math.max(0, Math.ceil(missionTimer)) + ' dtk' : '');
+    if (d < (objective.pos === safePos ? 11 : 8.5)) {
+      const cb = objective.onArrive;
+      if (cb) { clearObjective(); cb(); }
+      else if (!S.freeRoam) MISSIONS[S.missionIndex].arrive();
+    }
+  } else hud.mDist.textContent = '';
+  // timer misi
+  if (missionTimer !== null && S.started && !S.over) {
+    missionTimer -= dt;
+    if (missionTimer <= 0) { missionTimer = null; failMission('Waktu habis!'); }
+  }
+  if (crashCooldown > 0) crashCooldown -= dt;
+  // regen health pelan saat bersih
+  if (S.wanted === 0 && S.health > 0 && S.health < 100) { S.health = Math.min(100, S.health + dt * 1.1); refreshHUD(); }
+}
+// ---------------- Kamera & minimap ----------------
+let camYaw = Math.PI;
+function updateCamera(dt) {
+  const pp = playerPos(), ang = playerAngle();
+  camYaw += ((ang - camYaw + Math.PI * 3) % (Math.PI * 2) - Math.PI) * Math.min(1, dt * 4.5);
+  const dist = S.inCar ? 11.5 : 8, hgt = S.inCar ? 4.6 : 3.4;
+  const cx = pp.x + Math.sin(camYaw) * dist, cz = pp.z + Math.cos(camYaw) * dist;
+  const cy = groundHeight(pp.x, pp.z) + hgt;
+  camera.position.lerp(new THREE.Vector3(cx, Math.max(cy, groundHeight(cx, cz) + 2.2), cz), Math.min(1, dt * 5));
+  camera.lookAt(pp.x, groundHeight(pp.x, pp.z) + 1.6, pp.z);
+  const dirs = ['U', 'UT', 'T', 'TG', 'S', 'BD', 'B', 'BL'];
+  const heading = ((Math.atan2(-Math.sin(camYaw), -Math.cos(camYaw))) * 180 / Math.PI + 360) % 360;
+  hud.compass.textContent = dirs[Math.round(heading / 45) % 8];
+}
+const mm = el('minimap').getContext('2d');
+function drawMinimap(t) {
+  const W = 188, C = W / 2, scale = W / WORLD;
+  mm.clearRect(0, 0, W, W);
+  mm.fillStyle = '#14607e'; mm.fillRect(0, 0, W, W);
+  mm.fillStyle = '#3f9e4d';
+  const isl = ISLAND * scale;
+  mm.fillRect(C - isl / 2, C - isl / 2, isl, isl);
+  mm.strokeStyle = '#2e2e38'; mm.lineWidth = ROAD_W * scale;
+  for (const p of ROAD_POS) {
+    mm.beginPath(); mm.moveTo(C + p * scale, C - isl / 2); mm.lineTo(C + p * scale, C + isl / 2); mm.stroke();
+    mm.beginPath(); mm.moveTo(C - isl / 2, C + p * scale); mm.lineTo(C + isl / 2, C + p * scale); mm.stroke();
+  }
+  mm.strokeRect(C - RING * scale, C - RING * scale, RING * 2 * scale, RING * 2 * scale);
+  const dot = (x, z, color, r) => { mm.fillStyle = color; mm.beginPath(); mm.arc(C + x * scale, C + z * scale, r, 0, 7); mm.fill(); };
+  for (const g of gems) if (g.visible) dot(g.position.x, g.position.z, '#54f2ff', 2);
+  dot(sprayPos.x, sprayPos.z + 15, '#2ed573', 4);
+  dot(portPos.x, portPos.z, '#f39c12', 3); dot(clubPos.x, clubPos.z, '#ff2e88', 3); dot(safePos.x, safePos.z, '#ffd83d', 3);
+  for (const p of police) dot(p.mesh.position.x, p.mesh.position.z, Math.sin(t * 11) > 0 ? '#ff2222' : '#3388ff', 3.4);
+  if (objective) { const pulse = 4.5 + Math.sin(t * 6) * 1.6; dot(objective.pos.x, objective.pos.z, race ? '#d24dff' : '#ffd83d', pulse); }
+  // panah pemain
+  const pp = playerPos(), ang = playerAngle();
+  mm.save(); mm.translate(C + pp.x * scale, C + pp.z * scale); mm.rotate(-ang);
+  mm.fillStyle = '#ffffff'; mm.beginPath(); mm.moveTo(0, -6); mm.lineTo(4, 5); mm.lineTo(-4, 5); mm.closePath(); mm.fill(); mm.restore();
+}
+// ---------------- Loop utama ----------------
+const clock = new THREE.Clock();
+let elapsed = 0;
+function animate() {
+  requestAnimationFrame(animate);
+  const dt = Math.min(0.05, clock.getDelta());
+  elapsed += dt; const t = elapsed;
+  // animasi lingkungan
+  sea.position.y = -0.55 + Math.sin(t * 0.8) * 0.07;
+  clubSign.material.color.setHSL(0.92, 1, 0.55 + Math.sin(t * 3.2) * 0.14);
+  marker.rotation.y += dt * 1.6;
+  ringMesh.position.y = 0.5 + Math.sin(t * 2.4) * 0.22;
+  sprayMarker.rotation.y -= dt * 1.2;
+  sunBall.position.y = 150 + Math.sin(t * 0.05) * 6;
+  if (S.started && !S.over) {
+    if (S.inCar) updateCar(dt); else updateFoot(dt);
+    updateTraffic(dt, t);
+    updatePolice(dt, t);
+    updateRaceRival(dt);
+    updateObjectives(dt);
+  }
+  if (toastTimer > 0) { toastTimer -= dt; if (toastTimer <= 0) hud.toast.style.opacity = 0; }
+  if (bannerTimer > 0) { bannerTimer -= dt; if (bannerTimer <= 0) hud.banner.style.opacity = 0; }
+  // audio mesin
+  if (engineGain) {
+    const target = (!S.muted && S.started && S.inCar && !S.over) ? 0.022 : 0.0;
+    engineGain.gain.value += (target - engineGain.gain.value) * 0.2;
+    if (engineOsc) engineOsc.frequency.value = 55 + Math.abs(carSpeed) * 3.4;
+  }
+  updateCamera(dt);
+  drawMinimap(t);
+  renderer.render(scene, camera);
+}
+refreshHUD();
+animate();
 addEventListener('resize', () => {
-  camera.aspect = innerWidth / innerHeight; camera.updateProjectionMatrix();
+  camera.aspect = innerWidth / innerHeight;
+  camera.updateProjectionMatrix();
   renderer.setSize(innerWidth, innerHeight);
 });
 </script>
